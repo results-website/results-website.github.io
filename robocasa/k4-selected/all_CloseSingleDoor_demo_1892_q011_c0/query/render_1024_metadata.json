@@ -7,7 +7,11 @@
   "camera": 0,
   "msaa_samples": 4,
   "scene_rgb_is_native_render": true,
-  "feature_map_is_enlarged": true,
+  "feature_map_is_enlarged": false,
   "feature_native_resolution": 128,
-  "assignment_native_resolution": 128
+  "assignment_native_resolution": 128,
+  "feature_display_resolution": [
+    128,
+    128
+  ]
 }

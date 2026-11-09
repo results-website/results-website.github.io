@@ -53,33 +53,56 @@
     "camera": 1,
     "msaa_samples": 4,
     "scene_rgb_is_native_render": true,
-    "feature_map_is_enlarged": true,
+    "feature_map_is_enlarged": false,
     "feature_native_resolution": 128,
-    "assignment_native_resolution": 128
+    "assignment_native_resolution": 128,
+    "feature_display_resolution": [
+      128,
+      128
+    ]
   },
   "feature_visualization": {
-    "name": "Motion-group-balanced foreground PCA",
-    "shared_basis_across_cases": true,
-    "fit_region": "Recorded material-point peak motion >= 5 mm, visible at query, assigned to one of the four learned groups",
-    "group_weighting": "Equal total weight to each of four groups in each of four examples",
-    "normalization": "L2 normalize original 8D pixel embeddings",
-    "display": "Rotate inside the first-three-PC subspace for query-group RGB separation; 3rd/97th weighted foreground percentiles; foreground saturation and value boost; background desaturation",
-    "foreground_saturation": "0.82 + 0.18 * original saturation",
-    "foreground_value": "0.65 + 0.35 * original value",
-    "background_saturation_factor": 0.12,
-    "raw_features_changed": false,
-    "rotation_score": 0.8607524563272143,
-    "moving_group_pixels": [
-      1282,
-      1043,
-      1351,
-      1808
-    ],
-    "pca_output_native_resolution": 128,
-    "visualization_sizes": [
+    "name": "Ordinary all-pixel PCA with orthogonal display rotation",
+    "native_resolution": [
       128,
-      256,
-      1024
+      128
+    ],
+    "display_resolution": [
+      128,
+      128
+    ],
+    "shared_basis_across_cases": true,
+    "input_preprocessing": "Original L2-normalization of the frozen 8D pixel embeddings",
+    "pca_fit": "Unweighted centered covariance of all 65,536 pixels from the four selected external views",
+    "retained_components": "First three principal components; explained variance order retained separately",
+    "allowed_display_change": "Orthogonal rotation, including component sign and order choices, inside the same top-three-PC subspace",
+    "rotation_selection": "Learned group centroids and original query points score display separability; they never weight PCA or modify pixel colors",
+    "rgb_mapping": "One global per-channel linear min/max mapping over all pixels and all examples, followed by 8-bit quantization",
+    "pixel_dependent_processing": false,
+    "foreground_weighting": false,
+    "motion_masks_used": false,
+    "background_desaturation": false,
+    "saturation_or_value_boost": false,
+    "percentile_clipping": false,
+    "raw_features_changed": false,
+    "rotation_score": 0.503437690607678,
+    "rotation_candidates": 1072,
+    "component_order_sign_and_rotation": [
+      [
+        0.47296525909699416,
+        0.8522593109687158,
+        0.2235127078142158
+      ],
+      [
+        0.09759583012614602,
+        -0.3027947753848768,
+        0.9480455568914453
+      ],
+      [
+        -0.8756591332415264,
+        0.42657870418804555,
+        0.22638836432985343
+      ]
     ]
   }
 }

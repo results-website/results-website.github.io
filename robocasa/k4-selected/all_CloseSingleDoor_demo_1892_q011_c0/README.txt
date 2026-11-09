@@ -20,11 +20,14 @@ query/ours_raw.npz contains:
  scene_world, scene_valid, scene_geom: current per-pixel scene geometry.
  rgb_native128/history_rgb/proprio: observations reconstructed from saved states.
 
-Feature PNGs use shared, motion-group-balanced PCA of L2-normalized 8D features.
-PCA is fitted to recorded moving surfaces (>=5 mm) with equal weight to each
-group in each example; background is desaturated and foreground colors enhanced.
-The basis, rotation, bounds, masks, raw projections, and original embeddings are
-included. Features remain native 128x128, enlarged to 256 and 1024 for display.
+Feature PNGs are exactly 128x128, with no enlarged PCA variants. They use ordinary
+unweighted PCA of all pixels from the four external views, preserving the original
+L2-normalization of the 8D embeddings. Only component order/sign and an orthogonal
+rotation within the first-three-PC space are used to highlight the learned groups.
+The same linear full-image min/max RGB mapping is applied to every pixel across
+all four cases. No motion weighting, pixel masks, background adjustments, saturation
+boosts, whitening, or percentile clipping are applied. The basis, orthogonal
+rotation, RGB bounds, covariance, raw projections, and embeddings are included.
 The 1024 query RGB, point/trajectory backgrounds, and ending frames are NATIVE
 MuJoCo renders at 1024x1024 with 4x MSAA. Their masks/features still come from the
 128x128 model inputs. Earlier 256 point images enlarge the original 128 image.
