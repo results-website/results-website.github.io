@@ -1,0 +1,19 @@
+{
+  "task": "CloseSingleDoor",
+  "demo": "demo_1892",
+  "method": "random_k4",
+  "query_step": 176,
+  "selected_camera": 0,
+  "success": false,
+  "steps": 500,
+  "first_success_step": null,
+  "canonical_success": false,
+  "canonical_steps": 500,
+  "initial_state_sha256": "6613b4f27fbfb75be0f1c9972d87c94582331393dadcd1fc0b3c6ce0d9c81050",
+  "seed": 10015,
+  "predictor_sha256": "f6cb5f63e01a985e57971bfe03b6cc28a3b037712176cf59a6f2427b008c970b",
+  "policy_sha256": "b00192e01b9a89ca560d6d2324da3a4bcc3ad8ca047b633babea8687593112e1",
+  "states": 501,
+  "query_captured": true,
+  "independent_rollout": true
+}

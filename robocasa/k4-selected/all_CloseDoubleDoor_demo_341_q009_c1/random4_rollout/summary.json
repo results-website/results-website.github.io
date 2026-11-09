@@ -1,0 +1,19 @@
+{
+  "task": "CloseDoubleDoor",
+  "demo": "demo_341",
+  "method": "random_k4",
+  "query_step": 144,
+  "selected_camera": 1,
+  "success": false,
+  "steps": 700,
+  "first_success_step": null,
+  "canonical_success": false,
+  "canonical_steps": 700,
+  "initial_state_sha256": "92b44f81fbb098efe50a3b1d0a90312de5960408019c6eaaa17a2f3cd4f8d0d8",
+  "seed": 10026,
+  "predictor_sha256": "f6cb5f63e01a985e57971bfe03b6cc28a3b037712176cf59a6f2427b008c970b",
+  "policy_sha256": "b00192e01b9a89ca560d6d2324da3a4bcc3ad8ca047b633babea8687593112e1",
+  "states": 701,
+  "query_captured": true,
+  "independent_rollout": true
+}

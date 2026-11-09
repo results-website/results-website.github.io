@@ -1,0 +1,47 @@
+{
+  "id": "all_CloseDoubleDoor_demo_341_q009_c1",
+  "task": "CloseDoubleDoor",
+  "demo": "demo_341",
+  "query_index": 9,
+  "query_step": 144,
+  "camera": 1,
+  "camera_name": "robot0_agentview_right",
+  "instruction": "close the cabinet doors",
+  "ours_success": true,
+  "ours_steps": 532,
+  "ours_labels": [
+    "robot",
+    "robot",
+    "obj",
+    "robot"
+  ],
+  "feature_source": "Frozen learned selector recomputed on two-frame RGB observations recovered by replaying the original saved actions; state sequences match exactly, selector coordinates can differ by up to 0.5 native pixel",
+  "feature_dimension": 8,
+  "original_query_tracks": "Saved during the K4 replay; no forecast recomputation",
+  "policy_upsampling": "Exact saved 256 target pixel indices and per-parent counts, verified against the saved parent hash; targets retain their own XYZ and copy saved parent displacements",
+  "raw_point_max_difference_px": 0.25,
+  "cluster_assignment_hash_matches": [
+    false,
+    false,
+    false
+  ],
+  "parent_hash_matches": [
+    true,
+    true,
+    true
+  ],
+  "initial_world_max_error_m": 2.0794700184012527e-08,
+  "action_replay_max_state_error": 0.0,
+  "image_sizes": {
+    "native": 128,
+    "display": 256
+  },
+  "raw_cameras": [
+    "robot0_agentview_left",
+    "robot0_agentview_right",
+    "robot0_eye_in_hand"
+  ],
+  "display_cameras": "Only the selected external camera",
+  "initial_state_sha256": "92b44f81fbb098efe50a3b1d0a90312de5960408019c6eaaa17a2f3cd4f8d0d8",
+  "feature_maps_bitwise_original": false
+}
