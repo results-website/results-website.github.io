@@ -1,4 +1,4 @@
-id,task,demo,step,camera,object_actual_peak_cm,object_forecast_peak_cm,object_visible_motion_px,visual_gap_native_px,physical_gap_cm,actual_horizon_steps,recorded_success,recorded_steps,canonical_success,contrast
+id,task,demo,step,camera,object_actual_peak_cm,object_forecast_peak_cm,object_visible_motion_px,visual_gap_native_px,selected_geometry_distance_cm,actual_horizon_steps,recorded_success,recorded_steps,canonical_success,contrast
 all_PnPCabToCounter_demo_1010_q029_c0,PnPCabToCounter,demo_1010,464,0,17.889157145529875,18.34921967555997,8.800161144845003,1.0,-0.5720084022807548,32,False,500,False,False
 all_PnPCounterToMicrowave_demo_2162_q021_c0,PnPCounterToMicrowave,demo_2162,336,0,30.384310667627464,28.41244674066261,50.23214150962015,1.0,-3.6299266365138028,32,True,482,True,True
 all_PnPMicrowaveToCounter_demo_2121_q008_c1,PnPMicrowaveToCounter,demo_2121,128,1,45.31221424376635,41.12226653325722,74.13342378572612,1.0,-2.1376185449250684,32,True,261,True,True

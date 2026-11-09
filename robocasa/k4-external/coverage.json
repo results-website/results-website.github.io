@@ -1,14 +1,16 @@
 {
   "total": 1200,
-  "captured": 1020,
-  "audited": 1015,
+  "captured": 1200,
+  "audited": 1200,
   "errors": 0,
-  "planning_queries": 26941,
-  "external_views": 53882,
+  "planning_queries": 31687,
+  "external_views": 63374,
   "visible_motion_candidates": 1783,
   "contrast_candidates": 1551,
   "all_points_motion_candidates": 821,
   "all_points_contrast_candidates": 717,
+  "all_points_contrast_episodes": 209,
+  "all_points_contrast_gap_at_least_3px": 48,
   "all_points_preference": {
     "actual_min_cm": 0.5,
     "actual_visible_min_pixels": 3,
@@ -17444,19 +17446,22 @@
     {
       "task": "TurnOnStove",
       "demo": "demo_2192",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnStove",
@@ -17499,19 +17504,22 @@
     {
       "task": "TurnOnStove",
       "demo": "demo_575",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnStove",
@@ -17951,19 +17959,22 @@
     {
       "task": "TurnOffStove",
       "demo": "demo_162",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
@@ -18026,53 +18037,62 @@
     {
       "task": "TurnOffStove",
       "demo": "demo_1602",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
       "demo": "demo_484",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
       "demo": "demo_2186",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
@@ -18097,7 +18117,7 @@
     {
       "task": "TurnOffStove",
       "demo": "demo_1241",
-      "status": "pending_motion_audit",
+      "status": "audited",
       "planning_queries": 32,
       "external_views": 64,
       "visible_motion_views": 0,
@@ -18109,24 +18129,30 @@
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
       "demo": "demo_2740",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
@@ -18567,19 +18593,22 @@
     {
       "task": "TurnOffStove",
       "demo": "demo_558",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
@@ -18642,53 +18671,62 @@
     {
       "task": "TurnOffStove",
       "demo": "demo_920",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffStove",
       "demo": "demo_2538",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2053",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -18713,36 +18751,42 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_372",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 232,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1121",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -18787,19 +18831,22 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_584",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -18824,7 +18871,7 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1873",
-      "status": "pending_motion_audit",
+      "status": "audited",
       "planning_queries": 38,
       "external_views": 76,
       "visible_motion_views": 0,
@@ -18836,7 +18883,10 @@
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -19061,19 +19111,22 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2662",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -19098,7 +19151,7 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2839",
-      "status": "pending_motion_audit",
+      "status": "audited",
       "planning_queries": 38,
       "external_views": 76,
       "visible_motion_views": 0,
@@ -19110,7 +19163,10 @@
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -19135,19 +19191,22 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1671",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -19172,24 +19231,27 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1996",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 17,
+      "external_views": 34,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 261,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_846",
-      "status": "pending_motion_audit",
+      "status": "audited",
       "planning_queries": 16,
       "external_views": 32,
       "visible_motion_views": 0,
@@ -19201,160 +19263,190 @@
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2719",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2347",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 220,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2810",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 2,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2367",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2267",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1358",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_495",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1782",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1935",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 20,
+      "external_views": 40,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 317,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -19379,19 +19471,22 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_2065",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -19416,36 +19511,42 @@
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_1268",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
       "demo": "demo_654",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 6,
+      "object_2cm_views": 2,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeSetupMug",
@@ -19610,330 +19711,387 @@
     {
       "task": "CoffeeServeMug",
       "demo": "demo_406",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1497",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 5,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2116",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_170",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2926",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_919",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2731",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2548",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2382",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 36,
+      "external_views": 72,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 562,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 1,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2262",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2986",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 30,
+      "external_views": 60,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 476,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 2,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2026",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 35,
+      "external_views": 70,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 546,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1799",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2152",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_564",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2593",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1155",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1186",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1446",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1222",
-      "status": "pending_motion_audit",
+      "status": "audited",
       "planning_queries": 22,
       "external_views": 44,
       "visible_motion_views": 0,
@@ -19945,75 +20103,90 @@
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2264",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1457",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1158",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2610",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
@@ -20178,406 +20351,478 @@
     {
       "task": "CoffeeServeMug",
       "demo": "demo_840",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1266",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2604",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 27,
+      "external_views": 54,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 428,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1378",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_857",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2424",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1945",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2953",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1460",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_117",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1423",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_594",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1475",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1969",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1968",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2470",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_2582",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeeServeMug",
       "demo": "demo_1924",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 38,
+      "external_views": 76,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 600,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_1801",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 19,
+      "external_views": 38,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 300,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_539",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 7,
+      "external_views": 14,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 108,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2872",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 19,
+      "external_views": 38,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 300,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_330",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 120,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_1714",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 9,
+      "external_views": 18,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 137,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_702",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 6,
+      "external_views": 12,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 89,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
@@ -20741,406 +20986,478 @@
     {
       "task": "CoffeePressButton",
       "demo": "demo_736",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 7,
+      "external_views": 14,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 107,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_334",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 121,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_506",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 7,
+      "external_views": 14,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 109,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2308",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 115,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2163",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 120,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2148",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 7,
+      "external_views": 14,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 107,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2182",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 6,
+      "external_views": 12,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 88,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_966",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 19,
+      "external_views": 38,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 300,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_396",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 6,
+      "external_views": 12,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 96,
       "canonical_success": true,
       "failed_baselines": [
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2497",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 9,
+      "external_views": 18,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 132,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_716",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 6,
+      "external_views": 12,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 94,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_597",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 12,
+      "external_views": 24,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 180,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2239",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 6,
+      "external_views": 12,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 96,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_722",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 7,
+      "external_views": 14,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 99,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_1269",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 7,
+      "external_views": 14,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 109,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2581",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 117,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_96",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 6,
+      "external_views": 12,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 96,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_565",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 114,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_1779",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 114,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_763",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 19,
+      "external_views": 38,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 300,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_1405",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 9,
+      "external_views": 18,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 134,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 5,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2653",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 7,
+      "external_views": 14,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 106,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2338",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 19,
+      "external_views": 38,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 300,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_1306",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 9,
+      "external_views": 18,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 132,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
@@ -21305,408 +21622,480 @@
     {
       "task": "CoffeePressButton",
       "demo": "demo_2873",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 9,
+      "external_views": 18,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 130,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_2575",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 19,
+      "external_views": 38,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 300,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_805",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 8,
+      "external_views": 16,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 127,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "CoffeePressButton",
       "demo": "demo_734",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 9,
+      "external_views": 18,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 139,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_225",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_973",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2140",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2053",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 18,
+      "external_views": 36,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 287,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1825",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 250,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_547",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 233,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1496",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2007",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 251,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1861",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 249,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1592",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 256,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_976",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 216,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1387",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 254,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_384",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_228",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_744",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 217,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_962",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_393",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 256,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1156",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 235,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2729",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 17,
+      "external_views": 34,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 262,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2174",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 13,
+      "external_views": 26,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 206,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
@@ -21868,407 +22257,479 @@
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_711",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 3,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2399",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 17,
+      "external_views": 34,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 266,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1237",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 220,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2597",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 227,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1860",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 216,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2827",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 25,
+      "external_views": 50,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 397,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1281",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 223,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2326",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 209,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_344",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 24,
+      "external_views": 48,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 380,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_876",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 17,
+      "external_views": 34,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 265,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_443",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 236,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_536",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 216,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_2739",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 253,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1952",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_449",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 18,
+      "external_views": 36,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 279,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1278",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 18,
+      "external_views": 36,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 280,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1141",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 6,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1702",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 223,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_943",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 255,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1797",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_592",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 224,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOnMicrowave",
       "demo": "demo_1382",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 14,
+      "external_views": 28,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 219,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_796",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 22,
+      "external_views": 44,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 348,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2887",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
@@ -22425,394 +22886,466 @@
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2940",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 17,
+      "external_views": 34,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 264,
       "canonical_success": true,
       "failed_baselines": [
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_585",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 2,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2431",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2240",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 237,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2412",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2666",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_399",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 21,
+      "external_views": 42,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 328,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1159",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 16,
+      "external_views": 32,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 252,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_103",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1618",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_998",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 28,
+      "external_views": 56,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 446,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 3,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1364",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2402",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2678",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 23,
+      "external_views": 46,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 365,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform"
-      ]
+      ],
+      "both_point_views": 1,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1296",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_46",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2181",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 230,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1110",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_784",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2543",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 30,
+      "external_views": 60,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 470,
       "canonical_success": true,
       "failed_baselines": [
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_801",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 31,
+      "external_views": 62,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 496,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_875",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_909",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1041",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 9,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
@@ -22969,135 +23502,160 @@
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1943",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 21,
+      "external_views": 42,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 328,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1333",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 14,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1828",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 27,
+      "external_views": 54,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 427,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_132",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 17,
+      "external_views": 34,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 261,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1569",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform",
         "dinov2",
         "dinov3"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2401",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 15,
+      "external_views": 30,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 236,
       "canonical_success": true,
       "failed_baselines": [
         "random",
         "uniform"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_1388",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 28,
+      "external_views": 56,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": true,
+      "recorded_steps": 447,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform"
-      ]
+      ],
+      "both_point_views": 13,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     },
     {
       "task": "TurnOffMicrowave",
       "demo": "demo_2317",
-      "status": "pending_capture",
-      "planning_queries": 0,
-      "external_views": 0,
+      "status": "audited",
+      "planning_queries": 32,
+      "external_views": 64,
       "visible_motion_views": 0,
-      "recorded_success": null,
-      "recorded_steps": null,
+      "recorded_success": false,
+      "recorded_steps": 500,
       "canonical_success": false,
       "failed_baselines": [
         "random",
         "uniform"
-      ]
+      ],
+      "both_point_views": 0,
+      "object_2cm_views": 0,
+      "all_points_visible_views": 0
     }
   ],
   "protocol": "Every episode in the original validation manifest; all planning queries of each fresh K4 replay; no archive-based preselection",
+  "selected_geometry_distance_definition": "Signed convex distance from the selected target geometry to gripper geometry, not a validated whole-object clearance; the viewer uses image-mask separation instead",
   "candidate_requirements": [
     "Both object and robot points in the displayed external view",
     "Same object point actual displacement >=2 cm",
