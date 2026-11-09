@@ -1,7 +1,6 @@
 {
   "views": 1783,
   "validation_episodes": 1200,
-  "default_all_four_contrast_views": 717,
   "external_cameras": [
     0,
     1
@@ -14347,5 +14346,14 @@
       "sha256": "ffec93031ca1abcc66cb24cd14db3b43d660e9fbfc071c7747ef898e481af2a4",
       "bytes": 102272
     }
-  ]
+  ],
+  "all_four_contrast_views": 717,
+  "default_motion_difference_views": 307,
+  "motion_difference_default": {
+    "basis": "both",
+    "min_robot_object_rms_px": 3,
+    "min_all_pairs_rms_px": 3,
+    "sort": "minimum robot-object pair difference descending"
+  },
+  "trajectory_method_version": 1
 }
