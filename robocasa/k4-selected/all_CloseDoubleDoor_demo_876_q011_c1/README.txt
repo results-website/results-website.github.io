@@ -20,10 +20,15 @@ query/ours_raw.npz contains:
  scene_world, scene_valid, scene_geom: current per-pixel scene geometry.
  rgb_native128/history_rgb/proprio: observations reconstructed from saved states.
 
-Feature PNGs use a shared PCA of L2-normalized 8D features across the four chosen
-external views. PCA basis, bounds, raw projections, and original embeddings are
-included. RGB images use original 128 pixels enlarged to 256 for point/feature
-comparisons. This image resize is separate from K4-to-256 POLICY POINT upsampling.
+Feature PNGs use shared, motion-group-balanced PCA of L2-normalized 8D features.
+PCA is fitted to recorded moving surfaces (>=5 mm) with equal weight to each
+group in each example; background is desaturated and foreground colors enhanced.
+The basis, rotation, bounds, masks, raw projections, and original embeddings are
+included. Features remain native 128x128, enlarged to 256 and 1024 for display.
+The 1024 query RGB, point/trajectory backgrounds, and ending frames are NATIVE
+MuJoCo renders at 1024x1024 with 4x MSAA. Their masks/features still come from the
+128x128 model inputs. Earlier 256 point images enlarge the original 128 image.
+Image resolution is separate from K4-to-256 POLICY POINT upsampling.
 
 query/uniform256_common_raw.npz is uniform K=256 inference on the SAME K4 query
 state/history. This frozen comparison does not produce the baseline's outcome.

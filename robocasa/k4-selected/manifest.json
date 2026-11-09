@@ -45,6 +45,44 @@
     "display_cameras": "Only the selected external camera",
     "initial_state_sha256": "6613b4f27fbfb75be0f1c9972d87c94582331393dadcd1fc0b3c6ce0d9c81050",
     "feature_maps_bitwise_original": false,
+    "high_resolution_rendering": {
+      "resolution": [
+        1024,
+        1024
+      ],
+      "source": "Native MuJoCo render of exact recorded query/success/baseline terminal states; original saved point coordinates and trajectories projected into the same external camera",
+      "camera": 0,
+      "msaa_samples": 4,
+      "scene_rgb_is_native_render": true,
+      "feature_map_is_enlarged": true,
+      "feature_native_resolution": 128,
+      "assignment_native_resolution": 128
+    },
+    "feature_visualization": {
+      "name": "Motion-group-balanced foreground PCA",
+      "shared_basis_across_cases": true,
+      "fit_region": "Recorded material-point peak motion >= 5 mm, visible at query, assigned to one of the four learned groups",
+      "group_weighting": "Equal total weight to each of four groups in each of four examples",
+      "normalization": "L2 normalize original 8D pixel embeddings",
+      "display": "Rotate inside the first-three-PC subspace for query-group RGB separation; 3rd/97th weighted foreground percentiles; foreground saturation and value boost; background desaturation",
+      "foreground_saturation": "0.82 + 0.18 * original saturation",
+      "foreground_value": "0.65 + 0.35 * original value",
+      "background_saturation_factor": 0.12,
+      "raw_features_changed": false,
+      "rotation_score": 0.8607524563272143,
+      "moving_group_pixels": [
+        1263,
+        1222,
+        1631,
+        1597
+      ],
+      "pca_output_native_resolution": 128,
+      "visualization_sizes": [
+        128,
+        256,
+        1024
+      ]
+    },
     "failed_baseline": "random4_rollout",
     "uniform256": {
       "task": "CloseSingleDoor",
@@ -126,7 +164,8 @@
         "independent_rollout": true
       }
     ],
-    "raw_zip": "all_CloseSingleDoor_demo_1892_q011_c0/raw_data.zip"
+    "raw_zip": "all_CloseSingleDoor_demo_1892_q011_c0/raw_data.zip",
+    "images_1024_zip": "all_CloseSingleDoor_demo_1892_q011_c0/images_1024.zip"
   },
   {
     "id": "all_CloseDoubleDoor_demo_876_q011_c1",
@@ -174,6 +213,44 @@
     "display_cameras": "Only the selected external camera",
     "initial_state_sha256": "79c5c13857e40038310a82f0c9f77f87795901b4f5e420f9c3e07a00db6e3e64",
     "feature_maps_bitwise_original": false,
+    "high_resolution_rendering": {
+      "resolution": [
+        1024,
+        1024
+      ],
+      "source": "Native MuJoCo render of exact recorded query/success/baseline terminal states; original saved point coordinates and trajectories projected into the same external camera",
+      "camera": 1,
+      "msaa_samples": 4,
+      "scene_rgb_is_native_render": true,
+      "feature_map_is_enlarged": true,
+      "feature_native_resolution": 128,
+      "assignment_native_resolution": 128
+    },
+    "feature_visualization": {
+      "name": "Motion-group-balanced foreground PCA",
+      "shared_basis_across_cases": true,
+      "fit_region": "Recorded material-point peak motion >= 5 mm, visible at query, assigned to one of the four learned groups",
+      "group_weighting": "Equal total weight to each of four groups in each of four examples",
+      "normalization": "L2 normalize original 8D pixel embeddings",
+      "display": "Rotate inside the first-three-PC subspace for query-group RGB separation; 3rd/97th weighted foreground percentiles; foreground saturation and value boost; background desaturation",
+      "foreground_saturation": "0.82 + 0.18 * original saturation",
+      "foreground_value": "0.65 + 0.35 * original value",
+      "background_saturation_factor": 0.12,
+      "raw_features_changed": false,
+      "rotation_score": 0.8607524563272143,
+      "moving_group_pixels": [
+        1348,
+        1114,
+        2114,
+        1150
+      ],
+      "pca_output_native_resolution": 128,
+      "visualization_sizes": [
+        128,
+        256,
+        1024
+      ]
+    },
     "failed_baseline": "random4_rollout",
     "uniform256": {
       "task": "CloseDoubleDoor",
@@ -275,7 +352,8 @@
         "independent_rollout": true
       }
     ],
-    "raw_zip": "all_CloseDoubleDoor_demo_876_q011_c1/raw_data.zip"
+    "raw_zip": "all_CloseDoubleDoor_demo_876_q011_c1/raw_data.zip",
+    "images_1024_zip": "all_CloseDoubleDoor_demo_876_q011_c1/images_1024.zip"
   },
   {
     "id": "all_CloseDoubleDoor_demo_341_q009_c1",
@@ -323,6 +401,44 @@
     "display_cameras": "Only the selected external camera",
     "initial_state_sha256": "92b44f81fbb098efe50a3b1d0a90312de5960408019c6eaaa17a2f3cd4f8d0d8",
     "feature_maps_bitwise_original": false,
+    "high_resolution_rendering": {
+      "resolution": [
+        1024,
+        1024
+      ],
+      "source": "Native MuJoCo render of exact recorded query/success/baseline terminal states; original saved point coordinates and trajectories projected into the same external camera",
+      "camera": 1,
+      "msaa_samples": 4,
+      "scene_rgb_is_native_render": true,
+      "feature_map_is_enlarged": true,
+      "feature_native_resolution": 128,
+      "assignment_native_resolution": 128
+    },
+    "feature_visualization": {
+      "name": "Motion-group-balanced foreground PCA",
+      "shared_basis_across_cases": true,
+      "fit_region": "Recorded material-point peak motion >= 5 mm, visible at query, assigned to one of the four learned groups",
+      "group_weighting": "Equal total weight to each of four groups in each of four examples",
+      "normalization": "L2 normalize original 8D pixel embeddings",
+      "display": "Rotate inside the first-three-PC subspace for query-group RGB separation; 3rd/97th weighted foreground percentiles; foreground saturation and value boost; background desaturation",
+      "foreground_saturation": "0.82 + 0.18 * original saturation",
+      "foreground_value": "0.65 + 0.35 * original value",
+      "background_saturation_factor": 0.12,
+      "raw_features_changed": false,
+      "rotation_score": 0.8607524563272143,
+      "moving_group_pixels": [
+        1282,
+        1043,
+        1351,
+        1808
+      ],
+      "pca_output_native_resolution": 128,
+      "visualization_sizes": [
+        128,
+        256,
+        1024
+      ]
+    },
     "failed_baseline": "dinov3256_rollout",
     "uniform256": {
       "task": "CloseDoubleDoor",
@@ -424,7 +540,8 @@
         "independent_rollout": true
       }
     ],
-    "raw_zip": "all_CloseDoubleDoor_demo_341_q009_c1/raw_data.zip"
+    "raw_zip": "all_CloseDoubleDoor_demo_341_q009_c1/raw_data.zip",
+    "images_1024_zip": "all_CloseDoubleDoor_demo_341_q009_c1/images_1024.zip"
   },
   {
     "id": "all_CloseDoubleDoor_demo_2731_q010_c1",
@@ -472,6 +589,44 @@
     "display_cameras": "Only the selected external camera",
     "initial_state_sha256": "70cf5d63b895f1e8473fd03c3ab72d7441d44b4528ee550b7e9fa4fc2dd3d160",
     "feature_maps_bitwise_original": false,
+    "high_resolution_rendering": {
+      "resolution": [
+        1024,
+        1024
+      ],
+      "source": "Native MuJoCo render of exact recorded query/success/baseline terminal states; original saved point coordinates and trajectories projected into the same external camera",
+      "camera": 1,
+      "msaa_samples": 4,
+      "scene_rgb_is_native_render": true,
+      "feature_map_is_enlarged": true,
+      "feature_native_resolution": 128,
+      "assignment_native_resolution": 128
+    },
+    "feature_visualization": {
+      "name": "Motion-group-balanced foreground PCA",
+      "shared_basis_across_cases": true,
+      "fit_region": "Recorded material-point peak motion >= 5 mm, visible at query, assigned to one of the four learned groups",
+      "group_weighting": "Equal total weight to each of four groups in each of four examples",
+      "normalization": "L2 normalize original 8D pixel embeddings",
+      "display": "Rotate inside the first-three-PC subspace for query-group RGB separation; 3rd/97th weighted foreground percentiles; foreground saturation and value boost; background desaturation",
+      "foreground_saturation": "0.82 + 0.18 * original saturation",
+      "foreground_value": "0.65 + 0.35 * original value",
+      "background_saturation_factor": 0.12,
+      "raw_features_changed": false,
+      "rotation_score": 0.8607524563272143,
+      "moving_group_pixels": [
+        1839,
+        568,
+        1738,
+        1680
+      ],
+      "pca_output_native_resolution": 128,
+      "visualization_sizes": [
+        128,
+        256,
+        1024
+      ]
+    },
     "failed_baseline": "uniform4_rollout",
     "uniform256": {
       "task": "CloseDoubleDoor",
@@ -553,6 +708,7 @@
         "independent_rollout": true
       }
     ],
-    "raw_zip": "all_CloseDoubleDoor_demo_2731_q010_c1/raw_data.zip"
+    "raw_zip": "all_CloseDoubleDoor_demo_2731_q010_c1/raw_data.zip",
+    "images_1024_zip": "all_CloseDoubleDoor_demo_2731_q010_c1/images_1024.zip"
   }
 ]

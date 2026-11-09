@@ -1,0 +1,25 @@
+{
+  "name": "Motion-group-balanced foreground PCA",
+  "shared_basis_across_cases": true,
+  "fit_region": "Recorded material-point peak motion >= 5 mm, visible at query, assigned to one of the four learned groups",
+  "group_weighting": "Equal total weight to each of four groups in each of four examples",
+  "normalization": "L2 normalize original 8D pixel embeddings",
+  "display": "Rotate inside the first-three-PC subspace for query-group RGB separation; 3rd/97th weighted foreground percentiles; foreground saturation and value boost; background desaturation",
+  "foreground_saturation": "0.82 + 0.18 * original saturation",
+  "foreground_value": "0.65 + 0.35 * original value",
+  "background_saturation_factor": 0.12,
+  "raw_features_changed": false,
+  "rotation_score": 0.8607524563272143,
+  "moving_group_pixels": [
+    1839,
+    568,
+    1738,
+    1680
+  ],
+  "pca_output_native_resolution": 128,
+  "visualization_sizes": [
+    128,
+    256,
+    1024
+  ]
+}
