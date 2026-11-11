@@ -43,7 +43,7 @@
 42,"Foong, Elena Shu Xian",Elena Shu Xian Foong,923202862,matched,84,14,21,66.66666666666667,V2,name_exact
 43,"Gaikwad, Soham",Soham Gaikwad,923238357,matched,28,7,21,33.333333333333336,V2,name_exact
 44,"Ganta, Pranaya Rao",Pranaya Rao Ganta,922305346,matched,73,12,21,57.142857142857146,V0,id_exact
-45,"Godinez, Matteo",Matteo Godinez,923167554,no_exam_record,,,21,,,
+45,"Godinez, Matteo",Matteo Godinez,923167554,matched,173,19,21,90.47619047619048,V0,id_exact
 46,"Gonzalez, Xavier",Xavier Gonzalez,922255250,matched,6,10,21,47.61904761904762,V1,name_exact
 47,"Gosti, Erika",Erika Gosti,922370423,matched,133,19,21,90.47619047619048,V3,name_and_near_id
 48,"Greene, Samuel",Samuel Greene,922651676,matched,97,19,21,90.47619047619048,V0,id_exact
@@ -56,7 +56,7 @@
 55,"Hussaini, Ilyas",Ilyas Hussaini,922704905,matched,47,20,21,95.23809523809524,V2,id_exact
 56,"Im, Noah",Noah Im,923109389,matched,139,11,21,52.38095238095238,V3,name_exact
 57,"Iype, Sanjith",Sanjith Iype,922364264,matched,19,16,21,76.19047619047619,V2,id_exact
-58,"Jaimini, Achintya",Achintya Jaimini,921802112,no_exam_record,,,21,,,
+58,"Jaimini, Achintya",Achintya Jaimini,921802112,matched,168,9,21,42.857142857142854,V0,id_exact
 59,"Jiang, Yujie",Yujie Jiang,922456224,matched,52,17,21,80.95238095238095,V3,id_exact
 60,"Kabiri, Faraz",Faraz Kabiri,921913807,matched,164,20,21,95.23809523809524,V2,id_exact
 61,"Kainikara, Adam",Adam Kainikara,923742416,matched,138,14,21,66.66666666666667,V1,id_exact
@@ -66,9 +66,9 @@
 65,"Kaur, Prabhjot",Prabhjot Kaur,923965688,matched,58,13,21,61.904761904761905,V0,id_exact
 66,"Kong, Eric",Eric Kong,920794218,matched,60,15,21,71.42857142857143,V0,id_exact
 67,"Kulkarni, Omkar",Omkar Kulkarni,923672007,matched,129,14,21,66.66666666666667,V2,id_exact
-68,"Kumar, Rishi",Rishi Kumar,922196416,no_exam_record,,,21,,,
+68,"Kumar, Rishi",Rishi Kumar,922196416,matched,175,18,21,85.71428571428571,V0,id_exact
 69,"Kwong, Danny",Danny Kwong,923522885,matched,131,10,21,47.61904761904762,V1,id_exact
-70,"Lai, Angelina",Angelina Lai,922549186,no_exam_record,,,21,,,
+70,"Lai, Angelina",Angelina Lai,922549186,matched,169,17,21,80.95238095238095,V0,id_exact
 71,"Lakadia, Aseel Ahmed",Aseel Ahmed Lakadia,923291242,matched,25,16,21,76.19047619047619,V2,id_exact
 72,"Lapteva, Yana",Yana Lapteva,923809595,matched,107,21,21,100.0,V3,name_exact
 73,"Le, Kevin",Kevin Le,922644858,matched,1,19,21,90.47619047619048,V2,id_exact
@@ -109,7 +109,7 @@
 108,"Pinto, Daniel",Daniel Pinto,924685226,matched,165,11,21,52.38095238095238,V0,id_exact
 109,"Pompa, Pamela",Pamela Pompa,921914848,matched,125,17,21,80.95238095238095,V3,id_exact
 110,"Prasad, Kabir",Kabir Prasad,922339684,matched,109,12,21,57.142857142857146,V2,name_and_near_id
-111,"Raghuram, Rajeev",Rajeev Raghuram,921791508,no_exam_record,,,21,,,
+111,"Raghuram, Rajeev",Rajeev Raghuram,921791508,matched,174,8,21,38.095238095238095,V0,id_exact
 112,"Rahardja, Bryan",Bryan Rahardja,923002923,matched,71,15,21,71.42857142857143,V0,id_exact
 113,"Raisi, Kian",Kian Raisi,917154104,matched,2,16,21,76.19047619047619,V3,id_exact
 114,"Rajapakse, Pramodya",Pramodya Rajapakse,918482406,matched,42,17,21,80.95238095238095,V1,id_exact
@@ -146,13 +146,13 @@
 145,"Trinh, Daryan",Daryan Trinh,923862778,matched,108,21,21,100.0,V0,id_exact
 146,"Truong, Ryan",Ryan Truong,924081066,matched,70,14,21,66.66666666666667,V1,id_exact
 147,"Tsang, Alfred",Alfred Tsang,922152971,matched,137,21,21,100.0,V1,id_exact
-148,"Tsiklauri, Giorgi",Giorgi Tsiklauri,921207898,no_exam_record,,,21,,,
+148,"Tsiklauri, Giorgi",Giorgi Tsiklauri,921207898,matched,170,16,21,76.19047619047619,V0,id_exact
 149,"Twitchell, Reid",Reid Twitchell,919264267,matched,38,17,21,80.95238095238095,V0,id_exact
 150,"Ueda, Taylor",Taylor Ueda,922198896,matched,69,12,21,57.142857142857146,V2,name_exact
-151,"Venkatakrishnan, Matangi",Matangi Venkatakrishnan,921362733,no_exam_record,,,21,,,
+151,"Venkatakrishnan, Matangi",Matangi Venkatakrishnan,921362733,matched,172,11,21,52.38095238095238,V0,id_exact
 152,"Venkatesan, Ananya",Ananya Venkatesan,923344018,matched,31,10,21,47.61904761904762,V3,name_exact
 153,"Vo, Albert",Albert Vo,924005385,matched,117,19,21,90.47619047619048,V2,id_exact
-154,"Voloshin, Liz",Liz Voloshin,921331450,no_exam_record,,,21,,,
+154,"Voloshin, Liz",Liz Voloshin,921331450,matched,171,17,21,80.95238095238095,V0,id_exact
 155,"Wang, Yiran",Yiran Wang,922158739,matched,162,19,21,90.47619047619048,V2,id_exact
 156,"Weng, Xian Yang",Xian Yang Weng,927520168,matched,88,18,21,85.71428571428571,V2,id_exact
 157,"Wong, Chun San",Chun San Wong,925238274,matched,156,7,21,33.333333333333336,V1,id_exact

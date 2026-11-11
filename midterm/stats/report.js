@@ -7,13 +7,13 @@
   const format=(value,digits=2)=>value==null?'—':Number(value).toFixed(digits);
   const percent=value=>value==null?'—':format(value,1)+'%';
   const letters=[...'ABCDEFGH'];
-  let selectedQuestion=1,activeTab='overview';
-  const gradeFilters={search:'',version:'all',match:'all',sort:'roster'};
+  let selectedQuestion=1,activeTab='updates';
+  const gradeFilters={search:'',version:'all',match:'all',batch:'all',sort:'roster'};
   let printFilters=null;
 
   function showTab(name){
     activeTab=name;
-    for(const section of ['overview','questions','grades','roster','methods']){
+    for(const section of ['updates','overview','questions','grades','roster','methods']){
       $('#'+section+'-section').hidden=section!==name;
       $(`[data-tab="${section}"]`).classList.toggle('active',section===name);
     }
@@ -21,7 +21,9 @@
 
   function renderOverview(){
     const s=data.summary;
-    $('#snapshot').textContent='Updated grades + official roster · '+new Date(data.generated_at).toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})+' · '+s.n+' exams';
+    $('#snapshot').textContent='Updated grades + eight additional exams + official roster · '+new Date(data.generated_at).toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})+' · '+s.n+' exams';
+    $('#scope-note').innerHTML=`<span class="status-dot"></span><strong>All answer sets resolved.</strong> All ${s.n} exams and all 21 questions are included. Reviewed blank answers receive zero points.`;
+    $('#roster-reference').textContent=`Official roster: ${data.roster.summary.matched_exams} one-to-one matches · ${data.roster.summary.auditors} auditor · ${data.roster.summary.roster_without_exam} roster records without an exam.`;
     const cards=[
       [s.n,'Students included','All answer sets resolved'],
       [format(s.mean)+' <small>/ 21</small>','Mean score',percent(s.mean_percent)+' average'],
@@ -41,6 +43,13 @@
     $('#version-table').innerHTML='<thead><tr><th>Version</th><th>N</th><th>Mean / 21</th><th>Median</th><th>Sample SD</th></tr></thead><tbody>'+data.versions.map(v=>`<tr><td>${v.version}</td><td>${v.n}</td><td>${format(v.mean)}</td><td>${format(v.median)}</td><td>${format(v.sd)}</td></tr>`).join('')+'</tbody>';
   }
 
+  function renderUpdates(){
+    const u=data.updates;
+    $('#update-summary').textContent=`${u.added_exams} new exams matched one-to-one to the eight previously missing roster records. The pool is now ${data.summary.n} exams: ${data.roster.summary.matched_exams} enrolled students plus one auditor. Enter the eight scores below in the gradebook.`;
+    $('#updates-table').innerHTML='<thead><tr><th>Student</th><th>SIS student ID</th><th>Previous grade</th><th>Final / 21</th><th>Percent</th><th>Action</th></tr></thead><tbody>'+u.entries.map(s=>`<tr><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button></td><td>${escape(s.student_id)}</td><td>Ungraded</td><td class="score-cell">${s.score} / 21</td><td>${percent(s.percent)}</td><td>Enter grade</td></tr>`).join('')+'</tbody>';
+    $('#update-notes').innerHTML=u.entries.map(s=>`<p><strong>${escape(s.name)}:</strong> ${escape(s.review_notes)}</p>`).join('')+`<p class="muted small">All additional exams use V0, verified from Q15 and the questionnaire choice layout. Mean changed from ${format(u.previous_summary.mean)} to ${format(data.summary.mean)}/21; sample SD changed from ${format(u.previous_summary.sd)} to ${format(data.summary.sd)}.</p>`;
+  }
+
   function renderQuestions(){
     const order=$('#question-sort').value;
     const questions=[...data.questions].sort((a,b)=>order==='hardest'?a.mean-b.mean:order==='discrimination'?(b.corrected_item_total??-2)-(a.corrected_item_total??-2):a.number-b.number);
@@ -51,7 +60,7 @@
     const roster=data.roster,s=roster.summary;
     const cards=[[s.roster_students,'Students on roster'],[s.matched_exams,'One-to-one exam matches'],[s.roster_without_exam,'Roster records without an exam'],[s.auditors,'Auditor included in statistics']];
     $('#roster-metrics').innerHTML=cards.map(([value,label])=>`<div class="metric"><div class="metric-value">${value}</div><div class="metric-label">${label}</div></div>`).join('');
-    $('#auditors-table').innerHTML='<thead><tr><th>Page</th><th>Name on exam</th><th>Written / transcribed ID</th><th>Score / 21</th><th>Version</th></tr></thead><tbody>'+roster.auditors.map(s=>`<tr><td>${s.page}</td><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button></td><td>${escape(s.student_id)}</td><td>${s.score}</td><td>${s.version}</td></tr>`).join('')+'</tbody>';
+    $('#auditors-table').innerHTML='<thead><tr><th>Record</th><th>Name on exam</th><th>Written / transcribed ID</th><th>Score / 21</th><th>Version</th></tr></thead><tbody>'+roster.auditors.map(s=>`<tr><td>${s.page}</td><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button></td><td>${escape(s.student_id)}</td><td>${s.score}</td><td>${s.version}</td></tr>`).join('')+'</tbody>';
     $('#no-exam-table').innerHTML='<thead><tr><th>Official roster name</th><th>SIS student ID</th><th>Grade</th></tr></thead><tbody>'+roster.students.filter(r=>r.match_status==='no_exam_record').map(r=>`<tr><td>${escape(r.roster_name)}</td><td>${r.student_id}</td><td>Not assigned</td></tr>`).join('')+'</tbody>';
     const filter=$('#roster-filter').value;
     $('#roster-table').innerHTML='<thead><tr><th>Roster #</th><th>Official roster name</th><th>SIS student ID</th><th>Exam page</th><th>Score / 21</th><th>Match</th></tr></thead><tbody>'+roster.students.filter(r=>filter==='all'||r.match_status===filter).map(r=>`<tr><td>${r.roster_order}</td><td>${escape(r.roster_name)}</td><td>${r.student_id}</td><td>${r.page===null?'—':r.page}</td><td>${r.score===null?'—':r.score}</td><td class="${r.match_status==='matched'?'match-ok':'muted'}">${r.match_status==='matched'?'Matched':'No exam record'}</td></tr>`).join('')+'</tbody>';
@@ -69,20 +78,20 @@
 
   function filteredStudents(){
     const query=gradeFilters.search.trim().toLocaleLowerCase();
-    return data.students.filter(s=>(gradeFilters.version==='all'||s.version===gradeFilters.version)&&(gradeFilters.match==='all'||s.match_status===gradeFilters.match)&&(!query||`${s.name} ${s.roster_name} ${s.student_id} ${s.page} ${s.source_name} ${s.source_student_id}`.toLocaleLowerCase().includes(query))).sort((a,b)=>gradeFilters.sort==='highest'?b.score-a.score||a.name.localeCompare(b.name):gradeFilters.sort==='lowest'?a.score-b.score||a.name.localeCompare(b.name):gradeFilters.sort==='page'?a.page-b.page:gradeFilters.sort==='roster'?a.roster_order-b.roster_order:a.name.localeCompare(b.name));
+    return data.students.filter(s=>(gradeFilters.version==='all'||s.version===gradeFilters.version)&&(gradeFilters.batch==='all'||s.batch===gradeFilters.batch)&&(gradeFilters.match==='all'||s.match_status===gradeFilters.match)&&(!query||`${s.name} ${s.roster_name} ${s.student_id} ${s.page} ${s.source_name} ${s.source_student_id}`.toLocaleLowerCase().includes(query))).sort((a,b)=>gradeFilters.sort==='highest'?b.score-a.score||a.name.localeCompare(b.name):gradeFilters.sort==='lowest'?a.score-b.score||a.name.localeCompare(b.name):gradeFilters.sort==='page'?a.page-b.page:gradeFilters.sort==='roster'?a.roster_order-b.roster_order:a.name.localeCompare(b.name));
   }
 
   function renderGrades(){
     const students=filteredStudents();
     $('#grade-count').textContent=`${students.length} / ${data.students.length} students`;
-    $('#grades-table').innerHTML='<thead><tr><th>Page</th><th>Student · roster identity</th><th>Student ID</th><th>Version</th><th>Score / 21</th><th>Percentage</th></tr></thead><tbody>'+(students.length?students.map(s=>`<tr><td class="number">${s.page}</td><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button>${s.match_status==='auditor'?'<br><span class="roster-flag auditor">Auditor</span>':s.match_status==='unmatched'?'<br><span class="roster-flag">No roster match</span>':''}</td><td class="number">${escape(s.student_id||'—')}</td><td>${s.version}</td><td class="score-cell number">${s.score} <span class="muted">/ 21</span></td><td class="number">${percent(s.percent)}<div class="percent-track"><span style="width:${s.percent}%"></span></div></td></tr>`).join(''):'<tr><td class="empty" colspan="6">No matching student records.</td></tr>')+'</tbody>';
+    $('#grades-table').innerHTML='<thead><tr><th>Record</th><th>Student · roster identity</th><th>Student ID</th><th>Version</th><th>Score / 21</th><th>Percentage</th></tr></thead><tbody>'+(students.length?students.map(s=>`<tr><td class="number">${s.page}</td><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button>${s.batch==='additional'?'<br><span class="roster-flag additional">Additional exam</span>':''}${s.match_status==='auditor'?'<br><span class="roster-flag auditor">Auditor</span>':s.match_status==='unmatched'?'<br><span class="roster-flag">No roster match</span>':''}</td><td class="number">${escape(s.student_id||'—')}</td><td>${s.version}</td><td class="score-cell number">${s.score} <span class="muted">/ 21</span></td><td class="number">${percent(s.percent)}<div class="percent-track"><span style="width:${s.percent}%"></span></div></td></tr>`).join(''):'<tr><td class="empty" colspan="6">No matching student records.</td></tr>')+'</tbody>';
   }
 
   function showStudent(page){
     const s=data.students.find(student=>student.page===page);
     if(!s)return;
     $('#student-title').textContent=s.name;
-    $('#student-result').innerHTML=`<div class="student-summary"><span class="student-score">${s.score}<small> / 21</small></span><strong>${percent(s.percent)}</strong><span>${s.version} · scan page ${s.page}</span><span>ID: ${escape(s.student_id||'Not provided')}</span></div>${s.match_status==='auditor'?'<p class="roster-flag auditor">Auditor · included in the score distribution and all exam statistics.</p>':s.match_status==='unmatched'?'<p class="roster-flag">This exam has no match in the supplied roster.</p>':''}<div class="response-grid">${s.answers.map((answer,i)=>`<div class="response ${s.points[i]?'':'wrong'}"><div class="response-q">Q${i+1}</div><div class="response-answer">${escape(answer||'—')} ${s.points[i]?'✓':'×'}</div><div class="response-key">Key: ${data.questions[i].correct_options[s.version]} · ${s.points[i]} / 1</div></div>`).join('')}</div><p class="muted small">A dash means a reviewed blank response. Every question, including Q15, counts for one point.</p><details class="identity-details"><summary>Roster match details</summary><p>${escape(s.match_note)}</p><p>Original grade-sheet name: ${escape(s.source_name)}<br>Original transcribed ID: ${escape(s.source_student_id||'Not provided')}</p></details>`;
+    $('#student-result').innerHTML=`<div class="student-summary"><span class="student-score">${s.score}<small> / 21</small></span><strong>${percent(s.percent)}</strong><span>${s.version} · record ${s.page} · ${escape(s.source_label)}</span><span>ID: ${escape(s.student_id||'Not provided')}</span></div>${s.match_status==='auditor'?'<p class="roster-flag auditor">Auditor · included in the score distribution and all exam statistics.</p>':s.match_status==='unmatched'?'<p class="roster-flag">This exam has no match in the supplied roster.</p>':''}${s.batch==='additional'?`<div class="reading-note"><strong>Reading notes</strong>${s.review_notes.map(note=>`<p>${escape(note)}</p>`).join('')}</div>`:''}<div class="response-grid">${s.answers.map((answer,i)=>`<div class="response ${s.points[i]?'':'wrong'}"><div class="response-q">Q${i+1}</div><div class="response-answer">${escape(answer||'—')} ${s.points[i]?'✓':'×'}</div><div class="response-key">Key: ${data.questions[i].correct_options[s.version]} · ${s.points[i]} / 1</div></div>`).join('')}</div><p class="muted small">A dash means a reviewed blank response. Every question, including Q15, counts for one point.</p><details class="identity-details"><summary>Roster match details</summary><p>${escape(s.match_note)}</p><p>Original submitted name: ${escape(s.source_name)}<br>Original transcribed ID: ${escape(s.source_student_id||'Not provided')}</p></details>`;
     $('#student-dialog').showModal();
   }
 
@@ -97,9 +106,9 @@
     setTimeout(()=>URL.revokeObjectURL(url),5000);
   }
 
-  function exportGrades(matchedOnly=false){
-    const rows=data.students.filter(s=>!matchedOnly||s.match_status==='matched').map(s=>({...s,answers:s.answers.map(a=>a||'-').join(' '),...Object.fromEntries(s.answers.map((answer,i)=>['q'+(i+1),answer]))}));
-    download(matchedOnly?'ECS174-midterm-roster-matched-grades.csv':'ECS174-midterm-grades.csv',csvText(rows,['page','name','student_id','roster_name','match_status','enrollment_status','match_method','version','score','out_of','percent','answers','source_name','source_student_id',...Array.from({length:21},(_,i)=>'q'+(i+1))]),'text/csv;charset=utf-8');
+  function exportGrades(matchedOnly=false,batch='all'){
+    const rows=data.students.filter(s=>(!matchedOnly||s.match_status==='matched')&&(batch==='all'||s.batch===batch)).map(s=>({...s,answers:s.answers.map(a=>a||'-').join(' '),...Object.fromEntries(s.answers.map((answer,i)=>['q'+(i+1),answer]))}));
+    download(batch==='additional'?'ECS174-additional-exams.csv':matchedOnly?'ECS174-midterm-roster-matched-grades.csv':'ECS174-midterm-grades.csv',csvText(rows,['page','name','student_id','roster_name','match_status','enrollment_status','match_method','version','score','out_of','percent','answers','source_name','source_student_id','batch','source_label','answer_source','source_file',...Array.from({length:21},(_,i)=>'q'+(i+1))]),'text/csv;charset=utf-8');
   }
 
   function exportQuestions(){
@@ -113,16 +122,17 @@
   }
 
   $('#methods').innerHTML=data.methodology.map(text=>'<li>'+escape(text)+'</li>').join('');
-  $('#source').innerHTML=`<p><strong>Grades:</strong> ${escape(data.source.filename)} · ${data.source.table_rows} exam records</p><p><strong>Roster:</strong> ${escape(data.roster.source_filename)} · ${data.roster.summary.roster_students} students</p><p><strong>Grade source SHA-256:</strong><br><code>${data.source.sha256}</code></p><p><strong>Roster source SHA-256:</strong><br><code>${data.roster.source_sha256}</code></p>`;
+  $('#source').innerHTML=`<p><strong>Grades:</strong> ${escape(data.source.filename)} · ${data.source.table_rows} original exam records</p><p><strong>Additional exams:</strong> ${escape(data.source.additional_filename)} · ${data.source.additional_rows} exams</p><p><strong>Additional ZIP SHA-256:</strong><br><code>${data.source.additional_sha256}</code></p><p><strong>Roster:</strong> ${escape(data.roster.source_filename)} · ${data.roster.summary.roster_students} students</p><p><strong>Grade source SHA-256:</strong><br><code>${data.source.sha256}</code></p><p><strong>Roster source SHA-256:</strong><br><code>${data.roster.source_sha256}</code></p>`;
   $('#question-sort').addEventListener('change',renderQuestions);
   $('#grade-search').addEventListener('input',event=>{gradeFilters.search=event.target.value;renderGrades();});
   $('#grade-version').addEventListener('change',event=>{gradeFilters.version=event.target.value;renderGrades();});
+  $('#grade-batch').addEventListener('change',event=>{gradeFilters.batch=event.target.value;renderGrades();});
   $('#grade-match').addEventListener('change',event=>{gradeFilters.match=event.target.value;renderGrades();});
   $('#grade-sort').addEventListener('change',event=>{gradeFilters.sort=event.target.value;renderGrades();});
   $('#roster-filter').addEventListener('change',renderRoster);
   $('#close-student').addEventListener('click',()=>$('#student-dialog').close());
   $('#print-report').addEventListener('click',()=>window.print());
-  window.addEventListener('beforeprint',()=>{printFilters={...gradeFilters};Object.assign(gradeFilters,{search:'',version:'all',match:'all',sort:'page'});renderGrades();});
+  window.addEventListener('beforeprint',()=>{printFilters={...gradeFilters};Object.assign(gradeFilters,{search:'',version:'all',match:'all',batch:'all',sort:'roster'});renderGrades();});
   window.addEventListener('afterprint',()=>{if(printFilters){Object.assign(gradeFilters,printFilters);printFilters=null;renderGrades();}});
   document.addEventListener('click',event=>{
     const button=event.target.closest('button,a');
@@ -130,6 +140,9 @@
     if(button.dataset.tab)showTab(button.dataset.tab);
     if(button.dataset.question){selectedQuestion=Number(button.dataset.question);showTab('questions');renderQuestionDetail();$('#question-detail').scrollIntoView({behavior:'smooth',block:'start'});}
     if(button.dataset.student)showStudent(Number(button.dataset.student));
+    if(button.matches('a[download][href="additional-exams.csv"]')){event.preventDefault();exportGrades(false,'additional');}
+    if(button.matches('a[download][href="gradebook-changes.csv"]')){event.preventDefault();download('ECS174-gradebook-changes.csv',csvText(data.updates.entries,['name','student_id','action','previous_score','score','out_of','percent','answers','review_notes']),'text/csv;charset=utf-8');}
+    if(button.matches('a[download][href="report.pdf"]')&&window.MIDTERM_OFFLINE){event.preventDefault();window.print();}
     if(button.matches('a[download][href="grades.csv"]')){event.preventDefault();exportGrades();}
     if(button.matches('a[download][href="question-statistics.csv"]')){event.preventDefault();exportQuestions();}
     if(button.matches('a[download][href="matched-grades.csv"]')){event.preventDefault();exportGrades(true);}
@@ -137,5 +150,5 @@
     if(button.matches('a[download][href="roster-matches.csv"]')){event.preventDefault();exportRoster(true);}
     if(button.matches('a[download][href="report.html"]')&&window.MIDTERM_OFFLINE){event.preventDefault();download('ECS174-midterm-report.html','<!doctype html>'+document.documentElement.outerHTML,'text/html;charset=utf-8');}
   });
-  renderOverview();renderQuestions();renderQuestionDetail();renderGrades();renderRoster();
+  renderOverview();renderUpdates();renderQuestions();renderQuestionDetail();renderGrades();renderRoster();showTab('updates');
 })();
