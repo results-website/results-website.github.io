@@ -6,5 +6,6 @@ export const defaultReview = {
   "sha256": "2722fea98c5c009b7ca72d8ffca52500e6cbc4b74d166b2d8dc9fb4aa762fa2c",
   "bytes": 48003703,
   "compression": "gzip",
-  "encryption": "AES-256-GCM"
+  "encryption": "AES-256-GCM",
+  "bootstrapKey": "qgg6KJ1ED9tjaf3bXZijmvyQ4OMDKdimvDqkM5TCllw"
 };

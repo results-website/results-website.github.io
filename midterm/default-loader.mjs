@@ -1,7 +1,8 @@
-import {defaultReview} from './default-review.mjs';
+import {defaultReview} from './default-review.mjs?v=normal-url-1';
 
 const decode=value=>Uint8Array.from(atob(value.replaceAll('-','+').replaceAll('_','/')+'='.repeat((4-value.length%4)%4)),c=>c.charCodeAt(0));
 export const defaultDatasetId=defaultReview.datasetId;
+export const defaultReviewKey=()=>defaultReview.bootstrapKey;
 export function privateReviewKey(){return new URLSearchParams(location.hash.slice(1)).get('reviewKey');}
 export function clearPrivateFragment(){const hash=new URLSearchParams(location.hash.slice(1));hash.delete('reviewKey');history.replaceState(null,'',location.pathname+location.search+(hash.size?'#'+hash.toString():''));}
 

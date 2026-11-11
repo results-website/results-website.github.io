@@ -1,5 +1,5 @@
 import {LETTERS,own,validateDataset,validateCorrections,gradeAll,statistics,csvText,gradeExport} from './model.mjs';
-import {defaultDatasetId,privateReviewKey,clearPrivateFragment,loadDefault} from './default-loader.mjs';
+import {defaultDatasetId,defaultReviewKey,privateReviewKey,clearPrivateFragment,loadDefault} from './default-loader.mjs?v=normal-url-1';
 
 const $=s=>document.querySelector(s),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(v,n=2)=>v===null||v===undefined?'—':Number(v).toFixed(n),pct=v=>v===null?'—':fmt(v,1)+'%';
@@ -89,16 +89,16 @@ window.addEventListener('beforeunload',e=>{if(unsaved){e.preventDefault();e.retu
 window.addEventListener('pagehide',()=>{if(unsaved)flushSave();});
 await dbReady;
 try{
-  const key=privateReviewKey();
+  const linkKey=privateReviewKey(),key=linkKey||defaultReviewKey();
   const active=db?await readStore('meta','active'):null;
-  const cached=db?await readStore('datasets',key?defaultDatasetId:active||defaultDatasetId):null;
+  const cached=db?await readStore('datasets',linkKey?defaultDatasetId:active||defaultDatasetId):null;
   if(cached){
     await activate(cached,true);
-    if(key){if(db)await writeStores([['meta','active',cached.dataset_id]]);clearPrivateFragment();}
+    if(linkKey){if(db)await writeStores([['meta','active',cached.dataset_id]]);clearPrivateFragment();}
   }else if(key){
     saveLabel('Opening Midterm 1…');$('#welcome-title').textContent='Opening your midterm…';
     const d=await loadDefault(key,percent=>saveLabel(percent===100?'Preparing answer sheets…':'Opening Midterm 1 · '+percent+'%'));
     await activate(d);
-    if(db)clearPrivateFragment();
+    if(db&&linkKey)clearPrivateFragment();
   }
 }catch(error){showNotice(error.message);saveLabel('Default exam could not be opened',true);}
