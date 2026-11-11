@@ -1,0 +1,168 @@
+﻿page,source_name,source_student_id,roster_name,matched_name,roster_student_id,match_method,match_note,score
+1,Kevin Le,922644858,"Le, Kevin",Kevin Le,922644858,id_exact,Exact unique SIS student ID,19
+2,Kian Raisi,917154104,"Raisi, Kian",Kian Raisi,917154104,id_exact,Exact unique SIS student ID,16
+3,Sebastian Bustamante,921762812,"Bustamante Lerma, Sebastian",Sebastian Bustamante Lerma,921762812,id_exact,Exact unique SIS student ID,12
+4,Huy Cao,921147712,"Cao, Huy",Huy Cao,921147712,id_exact,Exact unique SIS student ID,12
+5,Matthew Zhu,924077204,"Zhu, Matthew",Matthew Zhu,924072208,name_exact,Unique exact full name; roster ID fills or corrects the transcription,18
+6,Xavier Gonzalez,922252750,"Gonzalez, Xavier",Xavier Gonzalez,922255250,name_exact,Unique exact full name; roster ID fills or corrects the transcription,10
+7,Palina Katzhenka,922262887,"Karzhenka, Palina",Palina Karzhenka,922262887,id_exact,Exact unique SIS student ID,16
+8,Nathaniel York,922039740,"York, Nathaniel",Nathaniel York,922037740,name_exact,Unique exact full name; roster ID fills or corrects the transcription,11
+9,Jai Totta,923374444,"Totla, Jai",Jai Totla,923374444,id_exact,Exact unique SIS student ID,14
+10,Alexander Alcaraz,923926847,"Alcaraz, Alexander",Alexander Alcaraz,923926847,id_exact,Exact unique SIS student ID,14
+11,Maha Muthupalaniappan,922893264,"Muthupalaniappan, Maha",Maha Muthupalaniappan,922393264,name_exact,Unique exact full name; roster ID fills or corrects the transcription,18
+12,Sameer Tangirala,923721123,"Tangirala, Sameer",Sameer Tangirala,923721123,id_exact,Exact unique SIS student ID,16
+13,Hardik Sharma,921137544,"Sharma, Hardik",Hardik Sharma,921137544,id_exact,Exact unique SIS student ID,13
+14,Parnita Chowboori,921803768,"Chowtoori, Parnita",Parnita Chowtoori,921803768,id_exact,Exact unique SIS student ID,15
+15,Josh Tompkins-Nutt,924024900,"Tompkins-Nutt, Josh",Josh Tompkins-Nutt,924024900,id_exact,Exact unique SIS student ID,18
+16,Charitha Dandhi,922326798,"Dendhi, Charitha",Charitha Dendhi,922326998,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.933,14
+17,Mina Beikzadeh,,"Beikzadeh Loza, Mina",Mina Beikzadeh Loza,923378262,name_tokens,Unique given-name/surname tokens; roster supplies the remaining name and ID,7
+18,Pranav Kapoor,922025736,"Kapoor, Pranav",Pranav Kapoor,922025736,id_exact,Exact unique SIS student ID,14
+19,Sanjith Irpe,922364264,"Iype, Sanjith",Sanjith Iype,922364264,id_exact,Exact unique SIS student ID,16
+20,David Ki,921965849,"Yi, David",David Yi,921955849,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.875,19
+21,Takuma Sakamoto,917513544,"Sakamoto, Takuma",Takuma Sakamoto,927513544,name_exact,Unique exact full name; roster ID fills or corrects the transcription,13
+22,Wilson Chan,923428882,"Chan, Wilson",Wilson Chan,923428882,id_exact,Exact unique SIS student ID,17
+23,Nour Makhoul,926336049,"Makhoul, Nour",Nour Makhoul,926336049,id_exact,Exact unique SIS student ID,18
+24,Maxwell Chen,923689906,"Chen, Maxwell",Maxwell Chen,923689906,id_exact,Exact unique SIS student ID,14
+25,Aseel Lakadia,923291242,"Lakadia, Aseel Ahmed",Aseel Ahmed Lakadia,923291242,id_exact,Exact unique SIS student ID,16
+26,Riya Desirareddy,922007369,"Devarasetty, Puja",Puja Devarasetty,922007369,id_exact,Exact unique SIS student ID,14
+27,Aryan Kapoor,923410078,"Kapoor, Aryan",Aryan Kapoor,923410078,id_exact,Exact unique SIS student ID,15
+28,Soham Gaikwad,923258357,"Gaikwad, Soham",Soham Gaikwad,923238357,name_exact,Unique exact full name; roster ID fills or corrects the transcription,7
+29,Sahana Narayan,921988667,"Narayan, Sahana",Sahana Narayan,921988667,id_exact,Exact unique SIS student ID,13
+30,Edmund Hood,923505556,"Hood, Edmund",Edmund Hood,923505556,id_exact,Exact unique SIS student ID,15
+31,Ananya Venkatesan,923944018,"Venkatesan, Ananya",Ananya Venkatesan,923344018,name_exact,Unique exact full name; roster ID fills or corrects the transcription,10
+32,Howie Zeng,926470882,"Zeng, Howie",Howie Zeng,926470882,id_exact,Exact unique SIS student ID,16
+33,Atin Kumar Singh,924006452,"Singh, Atin Kumar",Atin Kumar Singh,924006452,id_exact,Exact unique SIS student ID,18
+34,Christian Zannotti,923998859,"Zannotti, Christian",Christian Zannotti,923998859,id_exact,Exact unique SIS student ID,19
+35,Karen Zhao,921521545,"Zhao, Karen",Karen Zhao,921521545,id_exact,Exact unique SIS student ID,13
+36,Becky Yang,923281311,"Young, Becky",Becky Young,923261311,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.857,13
+37,Ala Alawdi,925600093,"Alawdi, Ala",Ala Alawdi,925600093,id_exact,Exact unique SIS student ID,14
+38,Reif Twitchell,919264267,"Twitchell, Reid",Reid Twitchell,919264267,id_exact,Exact unique SIS student ID,17
+39,Deya Mujde,927539379,"Mujde, Doga",Doga Mujde,927539379,id_exact,Exact unique SIS student ID,14
+40,Luca St Pierre,922529533,"St Pierre, Luca",Luca St Pierre,922529533,id_exact,Exact unique SIS student ID,9
+41,Himani Manjunath,923180010,"Manjunath, Himani",Himani Manjunath,923180010,id_exact,Exact unique SIS student ID,11
+42,Pramodya Rajapakse,918482406,"Rajapakse, Pramodya",Pramodya Rajapakse,918482406,id_exact,Exact unique SIS student ID,17
+43,Paul Boyko,,"Boyko, Paul",Paul Boyko,927267641,name_exact,Unique exact full name; roster ID fills or corrects the transcription,15
+44,Nathan Lo,923262247,"Lo, Nathon",Nathon Lo,923262297,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.889,13
+45,Manraj Thethi,924914298,"Thandi, Manraj",Manraj Thandi,924914298,id_exact,Exact unique SIS student ID,12
+46,Millen Bisrat,922201259,"Bisrat, Millen",Millen Bisrat,922201259,id_exact,Exact unique SIS student ID,16
+47,Ilyas Hassaini,922704905,"Hussaini, Ilyas",Ilyas Hussaini,922704905,id_exact,Exact unique SIS student ID,20
+48,Brendy Alva Rodriguez,923654057,"Alva Rodriguez, Brendy",Brendy Alva Rodriguez,923554057,name_exact,Unique exact full name; roster ID fills or corrects the transcription,8
+49,Matthew Chao,916178722,"Chao, Matthew",Matthew Chao,922178722,name_exact,Unique exact full name; roster ID fills or corrects the transcription,19
+50,Yida He,927520249,"He, Yida",Yida He,927520249,id_exact,Exact unique SIS student ID,16
+51,Sasa Antunovic,913502822,"Antunovic, Sasa",Sasa Antunovic,913502828,name_exact,Unique exact full name; roster ID fills or corrects the transcription,19
+52,Yujie Jiang,922456224,"Jiang, Yujie",Yujie Jiang,922456224,id_exact,Exact unique SIS student ID,17
+53,Shaun Benagan,922001475,"Banagan, Shaun Mathieu",Shaun Mathieu Banagan,922001475,id_exact,Exact unique SIS student ID,14
+54,Ayperi Baktybekova,920424177,"Baktybekova, Aiperi",Aiperi Baktybekova,920424177,id_exact,Exact unique SIS student ID,10
+55,Seamus Yanez,927539490,"Yanez, Seamus",Seamus Yanez,927539450,name_exact,Unique exact full name; roster ID fills or corrects the transcription,16
+56,Bryan Arredondo,921480505,"Arredondo, Bryan",Bryan Arredondo,921480505,id_exact,Exact unique SIS student ID,15
+57,Sean Thurman,925238504,"Thurman, Sean",Sean Thurman,925238504,id_exact,Exact unique SIS student ID,12
+58,Prabhjot Kaur,923965688,"Kaur, Prabhjot",Prabhjot Kaur,923965688,id_exact,Exact unique SIS student ID,13
+59,Danny Yu,921852968,"Yu, Danny",Danny Yu,921852968,id_exact,Exact unique SIS student ID,12
+60,Eric Kong,920794218,"Kong, Eric",Eric Kong,920794218,id_exact,Exact unique SIS student ID,15
+61,Runling Li,922229105,"Li, Runling",Runling Li,922229105,id_exact,Exact unique SIS student ID,20
+62,Jose Rios,924908217,"Rios, Jose",Jose Rios,924908217,id_exact,Exact unique SIS student ID,9
+63,Adam Hetherwick,921436818,"Hetherwick, Adam",Adam Hetherwick,921436818,id_exact,Exact unique SIS student ID,15
+64,Francisco Chen,921681618,,Francisco Chen,,auditor_confirmed,Instructor-confirmed auditor; included in exam statistics and not expected on the enrollment roster,12
+65,Aiden Xie,921865997,"Xie, Aiden",Aiden Xie,921865997,id_exact,Exact unique SIS student ID,8
+66,Millie Orellana,925529666,"Orellana, Millie",Millie Orellana,925529666,id_exact,Exact unique SIS student ID,14
+67,Siyu Li,921916435,"Li, Siyu",Siyu Li,921916435,id_exact,Exact unique SIS student ID,16
+68,Lance Boynes,921135711,"Barnes, Lance",Lance Barnes,921135711,id_exact,Exact unique SIS student ID,9
+69,Taylor Ueda,,"Ueda, Taylor",Taylor Ueda,922198896,name_exact,Unique exact full name; roster ID fills or corrects the transcription,12
+70,Ruan Truong,924081066,"Truong, Ryan",Ryan Truong,924081066,id_exact,Exact unique SIS student ID,14
+71,Bryan Rahardja,923002923,"Rahardja, Bryan",Bryan Rahardja,923002923,id_exact,Exact unique SIS student ID,15
+72,Bryan Tret,923914016,"Tiet, Bryan",Bryan Tiet,923919016,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.900,15
+73,Pranaya Rao Ganta,922305346,"Ganta, Pranaya Rao",Pranaya Rao Ganta,922305346,id_exact,Exact unique SIS student ID,12
+74,Mohamad Isyroq Bin Mohamad Yusof,927520207,"Bin Mohamad Yusof, Mohamad Isyraq",Mohamad Isyraq Bin Mohamad Yusof,927520207,id_exact,Exact unique SIS student ID,18
+75,Cindy Sheng,922013447,"Shing, Cindy",Cindy Shing,922013447,id_exact,Exact unique SIS student ID,20
+76,Ralph Udra,925263638,"Doria, Ralph",Ralph Doria,925263838,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.857,18
+77,Yu Bin Teng Tan,927520197,"Tan, Yu Bin Tevyn",Yu Bin Tevyn Tan,927520197,id_exact,Exact unique SIS student ID,20
+78,Subhan Nasir,923865034,"Nasir, Subhan",Subhan Nasir,923865034,id_exact,Exact unique SIS student ID,15
+79,Nedaa Aljalab,921457745,"Aljalab, Nedaa",Nedaa Aljalab,921457745,id_exact,Exact unique SIS student ID,7
+80,Justin Chau,923264059,"Chan, Justin",Justin Chan,923264059,id_exact,Exact unique SIS student ID,18
+81,Gary Alvarado,927372057,"Alvarado, Gary",Gary Alvarado,927372057,id_exact,Exact unique SIS student ID,17
+82,Maitreya Das,922072037,"Das, Maitreya",Maitreya Das,922070037,name_exact,Unique exact full name; roster ID fills or corrects the transcription,18
+83,Eric Pacini,924647722,"Pacini, Eric",Eric Pacini,924642722,name_exact,Unique exact full name; roster ID fills or corrects the transcription,13
+84,Elena Shu Xian Foong,923202882,"Foong, Elena Shu Xian",Elena Shu Xian Foong,923202862,name_exact,Unique exact full name; roster ID fills or corrects the transcription,14
+85,Jessica Tran,922201092,"Tran, Jessica",Jessica Tran,922201592,name_exact,Unique exact full name; roster ID fills or corrects the transcription,5
+86,Avnish Chhetri,921997328,"Chhetri, Aunish",Aunish Chhetri,921997328,id_exact,Exact unique SIS student ID,8
+87,Ruiqi Chen,923461221,"Chen, Ruiqi",Ruiqi Chen,923461221,id_exact,Exact unique SIS student ID,16
+88,Xian Yang Weng,927520168,"Weng, Xian Yang",Xian Yang Weng,927520168,id_exact,Exact unique SIS student ID,18
+89,Viet-Thy Tran,921883021,"Tran, Viet-Thy",Viet-Thy Tran,921883021,id_exact,Exact unique SIS student ID,16
+90,Srihita Parati,921940320,"Panati, Srihita",Srihita Panati,921940320,id_exact,Exact unique SIS student ID,8
+91,Gevin Meshaitua Timrat,927513489,"Mestraitua Tarrat, Cesar",Cesar Mestraitua Tarrat,927513489,id_exact,Exact unique SIS student ID,14
+92,Karina Asanbekova,923403315,"Asanbekova, Karina",Karina Asanbekova,923403315,id_exact,Exact unique SIS student ID,15
+93,Nithya Sunku,923186959,"Sunku, Nithya",Nithya Sunku,923186959,id_exact,Exact unique SIS student ID,15
+94,Guilherme Braganca,923514385,"Braganca, Guilherme Luis",Guilherme Luis Braganca,923514385,id_exact,Exact unique SIS student ID,21
+95,Vermond Surdov,926979697,"Sardua, Vermond",Vermond Sardua,926979697,id_exact,Exact unique SIS student ID,11
+96,Janna Fasheh,922141827,"Fasheh, Janna",Janna Fasheh,922141827,id_exact,Exact unique SIS student ID,16
+97,Samuel Greene,922651676,"Greene, Samuel",Samuel Greene,922651676,id_exact,Exact unique SIS student ID,19
+98,Martin Ng,927500223,"Ng, Martin",Martin Ng,927520223,name_exact,Unique exact full name; roster ID fills or corrects the transcription,15
+99,Roshni Sandhu,922024183,"Sandhu, Roshni",Roshni Sandhu,922021183,name_exact,Unique exact full name; roster ID fills or corrects the transcription,13
+100,Joai Liu,921810515,"Liu, Jodi",Jodi Liu,921810515,id_exact,Exact unique SIS student ID,11
+101,Trisha Sharma,922236295,"Sharma, Trisha",Trisha Sharma,922236295,id_exact,Exact unique SIS student ID,10
+102,Ivan Savlin,921779575,"Savkin, Ivan",Ivan Savkin,921779575,id_exact,Exact unique SIS student ID,11
+103,Vivek Narayana,921939098,"Narayana, Vivek",Vivek Narayana,921939098,id_exact,Exact unique SIS student ID,15
+104,Matthew Saysamone,924024560,"Saysamone, Matthew",Matthew Saysamone,924024560,id_exact,Exact unique SIS student ID,14
+105,Sol Abrian,921491298,"Abrian, Sol",Sol Abrian,921991298,name_exact,Unique exact full name; roster ID fills or corrects the transcription,15
+106,Ian Marwong,922205543,"Marwong, Ian",Ian Marwong,922205543,id_exact,Exact unique SIS student ID,14
+107,Yana Lapteva,923309595,"Lapteva, Yana",Yana Lapteva,923809595,name_exact,Unique exact full name; roster ID fills or corrects the transcription,21
+108,Darogan Trinh,923862778,"Trinh, Daryan",Daryan Trinh,923862778,id_exact,Exact unique SIS student ID,21
+109,Sabir Prasad,922339654,"Prasad, Kabir",Kabir Prasad,922339684,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.917,12
+110,Nidhi Deshmukh,922439856,"Deshmukh, Nidhi",Nidhi Deshmukh,922439856,id_exact,Exact unique SIS student ID,21
+111,Cole Honsbad,922662189,"Hanstad, Cole",Cole Hanstad,922562189,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.833,18
+112,Luis Olea,923189639,"Olea, Luis",Luis Olea,923189639,id_exact,Exact unique SIS student ID,13
+113,Niccolo Ascanio,,"Abadia Pinheiro, Nicolas",Nicolas Abadia Pinheiro,923817422,scan_header_verified,"Original scan page 113 inspected: Nicolas Abadia Pinheiro, ID 923817422",14
+114,Fanyou Liu,927550484,"Liu, Fanyou",Fanyou Liu,927550484,id_exact,Exact unique SIS student ID,13
+115,Sitt,922982468,"Sitt, Than",Than Sitt,922982468,id_exact,Exact unique SIS student ID,16
+116,Hai Dang Nguyen,922382602,"Nguyen, Hai Dang",Hai Dang Nguyen,922382602,id_exact,Exact unique SIS student ID,16
+117,Albert Vo,924005385,"Vo, Albert",Albert Vo,924005385,id_exact,Exact unique SIS student ID,19
+118,Xunye Nian,917458193,"Nian, Xunye",Xunye Nian,917453193,name_exact,Unique exact full name; roster ID fills or corrects the transcription,9
+119,Nathan Le,923983770,"Le, Nathan",Nathan Le,923983770,id_exact,Exact unique SIS student ID,13
+120,Robert Choi,922780622,"Choi, Robert",Robert Choi,922786622,name_exact,Unique exact full name; roster ID fills or corrects the transcription,9
+121,Gerardo Barriga,923161754,"Barriga, Gerardo",Gerardo Barriga,923161754,id_exact,Exact unique SIS student ID,17
+122,Clara Ogus,921778576,"Ogus, Clara",Clara Ogus,921778576,id_exact,Exact unique SIS student ID,19
+123,Logan Hillger,924810206,"Hillyer, Logan",Logan Hillyer,924812206,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.923,18
+124,Anant Kumar Singh,923178080,"Singh, Anant Kumar",Anant Kumar Singh,923178080,id_exact,Exact unique SIS student ID,15
+125,Pamela Pompa,921914848,"Pompa, Pamela",Pamela Pompa,921914848,id_exact,Exact unique SIS student ID,17
+126,Sathvik Parasa,922076112,"Parasa, Sathvik",Sathvik Parasa,922076112,id_exact,Exact unique SIS student ID,12
+127,Tanini Maram,922038642,"Maram, Tarini",Tarini Maram,922038642,id_exact,Exact unique SIS student ID,17
+128,Chenxuan Zhang,922118427,"Zhang, Chenxuan",Chenxuan Zhang,922184127,name_exact,Unique exact full name; roster ID fills or corrects the transcription,14
+129,Omkar Kulkarni,923672007,"Kulkarni, Omkar",Omkar Kulkarni,923672007,id_exact,Exact unique SIS student ID,14
+130,Amar Thota,923202590,"Thota, Amar",Amar Thota,923202590,id_exact,Exact unique SIS student ID,15
+131,Danny Kwong,923522885,"Kwong, Danny",Danny Kwong,923522885,id_exact,Exact unique SIS student ID,10
+132,Yao Lin,923372019,"Lin, Yao",Yao Lin,923372019,id_exact,Exact unique SIS student ID,14
+133,Erika Gusti,923370422,"Gosti, Erika",Erika Gosti,922370423,name_and_near_id,Name agreement and 2 differing ID digit(s); normalized name similarity 0.909,19
+134,Harvey Yang,923748258,"Yang, Harvey",Harvey Yang,923748258,id_exact,Exact unique SIS student ID,21
+135,Jason Peng,922610646,"Peng, Jason",Jason Peng,922610646,id_exact,Exact unique SIS student ID,17
+136,Sicheng Zhou,922474950,"Zhou, Sicheng",Sicheng Zhou,922474950,id_exact,Exact unique SIS student ID,18
+137,Alfred Tsong,922152971,"Tsang, Alfred",Alfred Tsang,922152971,id_exact,Exact unique SIS student ID,21
+138,Adam Kalhilkara,923742416,"Kainikara, Adam",Adam Kainikara,923742416,id_exact,Exact unique SIS student ID,14
+139,Noah Im,923109384,"Im, Noah",Noah Im,923109389,name_exact,Unique exact full name; roster ID fills or corrects the transcription,11
+140,Chenfei Zhu,923790714,"Zhu, Chenfei",Chenfei Zhu,923790714,id_exact,Exact unique SIS student ID,13
+141,Aishwari Sirur,923447478,"Sirur, Aishwari",Aishwari Sirur,923447478,id_exact,Exact unique SIS student ID,15
+142,Bhavya Paleru,923401825,"Paleru, Bhavya",Bhavya Paleru,923401825,id_exact,Exact unique SIS student ID,15
+143,Alex Ren,922190726,"Ren, Alex",Alex Ren,922190726,id_exact,Exact unique SIS student ID,18
+144,Kushagra Sehgal,923378482,"Sehgal, Kushagra",Kushagra Sehgal,923378482,id_exact,Exact unique SIS student ID,17
+145,Victor Zhang,921658564,"Zhang, Victor",Victor Zhang,921858564,name_exact,Unique exact full name; roster ID fills or corrects the transcription,16
+146,Mohamed Abdulrahma,922858424,"Abdullrahma, Mohamed",Mohamed Abdullrahma,922858424,id_exact,Exact unique SIS student ID,12
+147,Deni Amarsaikhan,924046533,"Amarsaikhan, Devi",Devi Amarsaikhan,924046933,name_and_near_id,Name agreement and 1 differing ID digit(s); normalized name similarity 0.938,18
+148,Manushi Rane,922220803,"Rane, Manushri",Manushri Rane,922220803,id_exact,Exact unique SIS student ID,13
+149,David Bui,922457207,"Bui, David",David Bui,922457207,id_exact,Exact unique SIS student ID,10
+150,Isabelle Arely Ye,923503448,"Ye, Isabelle",Isabelle Ye,923503448,id_exact,Exact unique SIS student ID,11
+151,Anant,923002907,"Madhok, Anant",Anant Madhok,923002907,id_exact,Exact unique SIS student ID,11
+152,Arthur Hoveh,922681552,"Hsueh, Arthur",Arthur Hsueh,922681552,id_exact,Exact unique SIS student ID,20
+153,Leonardo Manieri,922520265,"Manieri, Leonardo",Leonardo Manieri,927520265,name_exact,Unique exact full name; roster ID fills or corrects the transcription,18
+154,Hiral Arora,923782463,"Arora, Hiral",Hiral Arora,923782463,id_exact,Exact unique SIS student ID,12
+155,Justin Li,921903273,"Li, Justin",Justin Li,921903273,id_exact,Exact unique SIS student ID,13
+156,Chun Sen Wong,925238274,"Wong, Chun San",Chun San Wong,925238274,id_exact,Exact unique SIS student ID,7
+157,Kartik Yedukaka,925249661,"Yedumbaka, Kartik",Kartik Yedumbaka,925249661,id_exact,Exact unique SIS student ID,17
+158,Edriss Osman,921058542,"Osman, Edriss",Edriss Osman,921058542,id_exact,Exact unique SIS student ID,10
+159,Divyansh Singh,923978196,"Singh, Divyansh",Divyansh Singh,923978196,id_exact,Exact unique SIS student ID,21
+160,Yifan Li,922165525,"Li, Yifan",Yifan Li,922155525,name_exact,Unique exact full name; roster ID fills or corrects the transcription,16
+161,Arjun Bajwa,926610086,"Bajwa, Arjun",Arjun Bajwa,925510086,name_exact,Unique exact full name; roster ID fills or corrects the transcription,9
+162,Yiran Wang,922158739,"Wang, Yiran",Yiran Wang,922158739,id_exact,Exact unique SIS student ID,19
+163,Xinyi Li,,"Li, Xinyi",Xinyi Li,922481338,name_exact,Unique exact full name; roster ID fills or corrects the transcription,16
+164,Faraz Kabiri,921913807,"Kabiri, Faraz",Faraz Kabiri,921913807,id_exact,Exact unique SIS student ID,20
+165,Daniel Pinto,924685226,"Pinto, Daniel",Daniel Pinto,924685226,id_exact,Exact unique SIS student ID,11
+166,Yuxuan Sun,922495340,"Sun, Yuxuan",Yuxuan Sun,922495340,id_exact,Exact unique SIS student ID,16
+167,Jiacheng Chen,924320270,"Chen, Jiacheng",Jiacheng Chen,927520320,name_exact,Unique exact full name; roster ID fills or corrects the transcription,13

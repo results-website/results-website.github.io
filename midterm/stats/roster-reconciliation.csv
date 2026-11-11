@@ -1,0 +1,175 @@
+﻿roster_order,roster_name,name,student_id,match_status,page,score,out_of,percent,version,match_method
+1,"Abadia Pinheiro, Nicolas",Nicolas Abadia Pinheiro,923817422,matched,113,14,21,66.66666666666667,V3,scan_header_verified
+2,"Abdullrahma, Mohamed",Mohamed Abdullrahma,922858424,matched,146,12,21,57.142857142857146,V0,id_exact
+3,"Abrian, Sol",Sol Abrian,921991298,matched,105,15,21,71.42857142857143,V2,name_exact
+4,"Alawdi, Ala",Ala Alawdi,925600093,matched,37,14,21,66.66666666666667,V2,id_exact
+5,"Alcaraz, Alexander",Alexander Alcaraz,923926847,matched,10,14,21,66.66666666666667,V3,id_exact
+6,"Aljalab, Nedaa",Nedaa Aljalab,921457745,matched,79,7,21,33.333333333333336,V3,id_exact
+7,"Alva Rodriguez, Brendy",Brendy Alva Rodriguez,923554057,matched,48,8,21,38.095238095238095,V3,name_exact
+8,"Alvarado, Gary",Gary Alvarado,927372057,matched,81,17,21,80.95238095238095,V0,id_exact
+9,"Amarsaikhan, Devi",Devi Amarsaikhan,924046933,matched,147,18,21,85.71428571428571,V1,name_and_near_id
+10,"Antunovic, Sasa",Sasa Antunovic,913502828,matched,51,19,21,90.47619047619048,V1,name_exact
+11,"Arora, Hiral",Hiral Arora,923782463,matched,154,12,21,57.142857142857146,V2,id_exact
+12,"Arredondo, Bryan",Bryan Arredondo,921480505,matched,56,15,21,71.42857142857143,V1,id_exact
+13,"Asanbekova, Karina",Karina Asanbekova,923403315,matched,92,15,21,71.42857142857143,V3,id_exact
+14,"Bajwa, Arjun",Arjun Bajwa,925510086,matched,161,9,21,42.857142857142854,V3,name_exact
+15,"Baktybekova, Aiperi",Aiperi Baktybekova,920424177,matched,54,10,21,47.61904761904762,V3,id_exact
+16,"Banagan, Shaun Mathieu",Shaun Mathieu Banagan,922001475,matched,53,14,21,66.66666666666667,V3,id_exact
+17,"Barnes, Lance",Lance Barnes,921135711,matched,68,9,21,42.857142857142854,V1,id_exact
+18,"Barriga, Gerardo",Gerardo Barriga,923161754,matched,121,17,21,80.95238095238095,V2,id_exact
+19,"Beikzadeh Loza, Mina",Mina Beikzadeh Loza,923378262,matched,17,7,21,33.333333333333336,V3,name_tokens
+20,"Bin Mohamad Yusof, Mohamad Isyraq",Mohamad Isyraq Bin Mohamad Yusof,927520207,matched,74,18,21,85.71428571428571,V0,id_exact
+21,"Bisrat, Millen",Millen Bisrat,922201259,matched,46,16,21,76.19047619047619,V1,id_exact
+22,"Boyko, Paul",Paul Boyko,927267641,matched,43,15,21,71.42857142857143,V0,name_exact
+23,"Braganca, Guilherme Luis",Guilherme Luis Braganca,923514385,matched,94,21,21,100.0,V3,id_exact
+24,"Bui, David",David Bui,922457207,matched,149,10,21,47.61904761904762,V1,id_exact
+25,"Bustamante Lerma, Sebastian",Sebastian Bustamante Lerma,921762812,matched,3,12,21,57.142857142857146,V2,id_exact
+26,"Cao, Huy",Huy Cao,921147712,matched,4,12,21,57.142857142857146,V3,id_exact
+27,"Chan, Justin",Justin Chan,923264059,matched,80,18,21,85.71428571428571,V0,id_exact
+28,"Chan, Wilson",Wilson Chan,923428882,matched,22,17,21,80.95238095238095,V1,id_exact
+29,"Chao, Matthew",Matthew Chao,922178722,matched,49,19,21,90.47619047619048,V1,name_exact
+30,"Chen, Jiacheng",Jiacheng Chen,927520320,matched,167,13,21,61.904761904761905,V2,name_exact
+31,"Chen, Maxwell",Maxwell Chen,923689906,matched,24,14,21,66.66666666666667,V0,id_exact
+32,"Chen, Ruiqi",Ruiqi Chen,923461221,matched,87,16,21,76.19047619047619,V3,id_exact
+33,"Chhetri, Aunish",Aunish Chhetri,921997328,matched,86,8,21,38.095238095238095,V2,id_exact
+34,"Choi, Robert",Robert Choi,922786622,matched,120,9,21,42.857142857142854,V3,name_exact
+35,"Chowtoori, Parnita",Parnita Chowtoori,921803768,matched,14,15,21,71.42857142857143,V3,id_exact
+36,"Das, Maitreya",Maitreya Das,922070037,matched,82,18,21,85.71428571428571,V0,name_exact
+37,"Dendhi, Charitha",Charitha Dendhi,922326998,matched,16,14,21,66.66666666666667,V0,name_and_near_id
+38,"Deshmukh, Nidhi",Nidhi Deshmukh,922439856,matched,110,21,21,100.0,V3,id_exact
+39,"Devarasetty, Puja",Puja Devarasetty,922007369,matched,26,14,21,66.66666666666667,V2,id_exact
+40,"Doria, Ralph",Ralph Doria,925263838,matched,76,18,21,85.71428571428571,V3,name_and_near_id
+41,"Fasheh, Janna",Janna Fasheh,922141827,matched,96,16,21,76.19047619047619,V1,id_exact
+42,"Foong, Elena Shu Xian",Elena Shu Xian Foong,923202862,matched,84,14,21,66.66666666666667,V2,name_exact
+43,"Gaikwad, Soham",Soham Gaikwad,923238357,matched,28,7,21,33.333333333333336,V2,name_exact
+44,"Ganta, Pranaya Rao",Pranaya Rao Ganta,922305346,matched,73,12,21,57.142857142857146,V0,id_exact
+45,"Godinez, Matteo",Matteo Godinez,923167554,no_exam_record,,,21,,,
+46,"Gonzalez, Xavier",Xavier Gonzalez,922255250,matched,6,10,21,47.61904761904762,V1,name_exact
+47,"Gosti, Erika",Erika Gosti,922370423,matched,133,19,21,90.47619047619048,V3,name_and_near_id
+48,"Greene, Samuel",Samuel Greene,922651676,matched,97,19,21,90.47619047619048,V0,id_exact
+49,"Hanstad, Cole",Cole Hanstad,922562189,matched,111,18,21,85.71428571428571,V2,name_and_near_id
+50,"He, Yida",Yida He,927520249,matched,50,16,21,76.19047619047619,V3,id_exact
+51,"Hetherwick, Adam",Adam Hetherwick,921436818,matched,63,15,21,71.42857142857143,V3,id_exact
+52,"Hillyer, Logan",Logan Hillyer,924812206,matched,123,18,21,85.71428571428571,V1,name_and_near_id
+53,"Hood, Edmund",Edmund Hood,923505556,matched,30,15,21,71.42857142857143,V2,id_exact
+54,"Hsueh, Arthur",Arthur Hsueh,922681552,matched,152,20,21,95.23809523809524,V0,id_exact
+55,"Hussaini, Ilyas",Ilyas Hussaini,922704905,matched,47,20,21,95.23809523809524,V2,id_exact
+56,"Im, Noah",Noah Im,923109389,matched,139,11,21,52.38095238095238,V3,name_exact
+57,"Iype, Sanjith",Sanjith Iype,922364264,matched,19,16,21,76.19047619047619,V2,id_exact
+58,"Jaimini, Achintya",Achintya Jaimini,921802112,no_exam_record,,,21,,,
+59,"Jiang, Yujie",Yujie Jiang,922456224,matched,52,17,21,80.95238095238095,V3,id_exact
+60,"Kabiri, Faraz",Faraz Kabiri,921913807,matched,164,20,21,95.23809523809524,V2,id_exact
+61,"Kainikara, Adam",Adam Kainikara,923742416,matched,138,14,21,66.66666666666667,V1,id_exact
+62,"Kapoor, Aryan",Aryan Kapoor,923410078,matched,27,15,21,71.42857142857143,V1,id_exact
+63,"Kapoor, Pranav",Pranav Kapoor,922025736,matched,18,14,21,66.66666666666667,V0,id_exact
+64,"Karzhenka, Palina",Palina Karzhenka,922262887,matched,7,16,21,76.19047619047619,V3,id_exact
+65,"Kaur, Prabhjot",Prabhjot Kaur,923965688,matched,58,13,21,61.904761904761905,V0,id_exact
+66,"Kong, Eric",Eric Kong,920794218,matched,60,15,21,71.42857142857143,V0,id_exact
+67,"Kulkarni, Omkar",Omkar Kulkarni,923672007,matched,129,14,21,66.66666666666667,V2,id_exact
+68,"Kumar, Rishi",Rishi Kumar,922196416,no_exam_record,,,21,,,
+69,"Kwong, Danny",Danny Kwong,923522885,matched,131,10,21,47.61904761904762,V1,id_exact
+70,"Lai, Angelina",Angelina Lai,922549186,no_exam_record,,,21,,,
+71,"Lakadia, Aseel Ahmed",Aseel Ahmed Lakadia,923291242,matched,25,16,21,76.19047619047619,V2,id_exact
+72,"Lapteva, Yana",Yana Lapteva,923809595,matched,107,21,21,100.0,V3,name_exact
+73,"Le, Kevin",Kevin Le,922644858,matched,1,19,21,90.47619047619048,V2,id_exact
+74,"Le, Nathan",Nathan Le,923983770,matched,119,13,21,61.904761904761905,V3,id_exact
+75,"Li, Justin",Justin Li,921903273,matched,155,13,21,61.904761904761905,V3,id_exact
+76,"Li, Runling",Runling Li,922229105,matched,61,20,21,95.23809523809524,V0,id_exact
+77,"Li, Siyu",Siyu Li,921916435,matched,67,16,21,76.19047619047619,V1,id_exact
+78,"Li, Xinyi",Xinyi Li,922481338,matched,163,16,21,76.19047619047619,V1,name_exact
+79,"Li, Yifan",Yifan Li,922155525,matched,160,16,21,76.19047619047619,V1,name_exact
+80,"Lin, Yao",Yao Lin,923372019,matched,132,14,21,66.66666666666667,V1,id_exact
+81,"Liu, Fanyou",Fanyou Liu,927550484,matched,114,13,21,61.904761904761905,V0,id_exact
+82,"Liu, Jodi",Jodi Liu,921810515,matched,100,11,21,52.38095238095238,V0,id_exact
+83,"Lo, Nathon",Nathon Lo,923262297,matched,44,13,21,61.904761904761905,V3,name_and_near_id
+84,"Madhok, Anant",Anant Madhok,923002907,matched,151,11,21,52.38095238095238,V2,id_exact
+85,"Makhoul, Nour",Nour Makhoul,926336049,matched,23,18,21,85.71428571428571,V0,id_exact
+86,"Manieri, Leonardo",Leonardo Manieri,927520265,matched,153,18,21,85.71428571428571,V3,name_exact
+87,"Manjunath, Himani",Himani Manjunath,923180010,matched,41,11,21,52.38095238095238,V0,id_exact
+88,"Maram, Tarini",Tarini Maram,922038642,matched,127,17,21,80.95238095238095,V2,id_exact
+89,"Marwong, Ian",Ian Marwong,922205543,matched,106,14,21,66.66666666666667,V2,id_exact
+90,"Mestraitua Tarrat, Cesar",Cesar Mestraitua Tarrat,927513489,matched,91,14,21,66.66666666666667,V0,id_exact
+91,"Mujde, Doga",Doga Mujde,927539379,matched,39,14,21,66.66666666666667,V1,id_exact
+92,"Muthupalaniappan, Maha",Maha Muthupalaniappan,922393264,matched,11,18,21,85.71428571428571,V2,name_exact
+93,"Narayan, Sahana",Sahana Narayan,921988667,matched,29,13,21,61.904761904761905,V2,id_exact
+94,"Narayana, Vivek",Vivek Narayana,921939098,matched,103,15,21,71.42857142857143,V2,id_exact
+95,"Nasir, Subhan",Subhan Nasir,923865034,matched,78,15,21,71.42857142857143,V3,id_exact
+96,"Ng, Martin",Martin Ng,927520223,matched,98,15,21,71.42857142857143,V3,name_exact
+97,"Nguyen, Hai Dang",Hai Dang Nguyen,922382602,matched,116,16,21,76.19047619047619,V3,id_exact
+98,"Nian, Xunye",Xunye Nian,917453193,matched,118,9,21,42.857142857142854,V0,name_exact
+99,"Ogus, Clara",Clara Ogus,921778576,matched,122,19,21,90.47619047619048,V0,id_exact
+100,"Olea, Luis",Luis Olea,923189639,matched,112,13,21,61.904761904761905,V0,id_exact
+101,"Orellana, Millie",Millie Orellana,925529666,matched,66,14,21,66.66666666666667,V3,id_exact
+102,"Osman, Edriss",Edriss Osman,921058542,matched,158,10,21,47.61904761904762,V2,id_exact
+103,"Pacini, Eric",Eric Pacini,924642722,matched,83,13,21,61.904761904761905,V3,name_exact
+104,"Paleru, Bhavya",Bhavya Paleru,923401825,matched,142,15,21,71.42857142857143,V3,id_exact
+105,"Panati, Srihita",Srihita Panati,921940320,matched,90,8,21,38.095238095238095,V3,id_exact
+106,"Parasa, Sathvik",Sathvik Parasa,922076112,matched,126,12,21,57.142857142857146,V2,id_exact
+107,"Peng, Jason",Jason Peng,922610646,matched,135,17,21,80.95238095238095,V3,id_exact
+108,"Pinto, Daniel",Daniel Pinto,924685226,matched,165,11,21,52.38095238095238,V0,id_exact
+109,"Pompa, Pamela",Pamela Pompa,921914848,matched,125,17,21,80.95238095238095,V3,id_exact
+110,"Prasad, Kabir",Kabir Prasad,922339684,matched,109,12,21,57.142857142857146,V2,name_and_near_id
+111,"Raghuram, Rajeev",Rajeev Raghuram,921791508,no_exam_record,,,21,,,
+112,"Rahardja, Bryan",Bryan Rahardja,923002923,matched,71,15,21,71.42857142857143,V0,id_exact
+113,"Raisi, Kian",Kian Raisi,917154104,matched,2,16,21,76.19047619047619,V3,id_exact
+114,"Rajapakse, Pramodya",Pramodya Rajapakse,918482406,matched,42,17,21,80.95238095238095,V1,id_exact
+115,"Rane, Manushri",Manushri Rane,922220803,matched,148,13,21,61.904761904761905,V1,id_exact
+116,"Ren, Alex",Alex Ren,922190726,matched,143,18,21,85.71428571428571,V2,id_exact
+117,"Rios, Jose",Jose Rios,924908217,matched,62,9,21,42.857142857142854,V3,id_exact
+118,"Sakamoto, Takuma",Takuma Sakamoto,927513544,matched,21,13,21,61.904761904761905,V3,name_exact
+119,"Sandhu, Roshni",Roshni Sandhu,922021183,matched,99,13,21,61.904761904761905,V3,name_exact
+120,"Sardua, Vermond",Vermond Sardua,926979697,matched,95,11,21,52.38095238095238,V0,id_exact
+121,"Savkin, Ivan",Ivan Savkin,921779575,matched,102,11,21,52.38095238095238,V0,id_exact
+122,"Saysamone, Matthew",Matthew Saysamone,924024560,matched,104,14,21,66.66666666666667,V1,id_exact
+123,"Sehgal, Kushagra",Kushagra Sehgal,923378482,matched,144,17,21,80.95238095238095,V0,id_exact
+124,"Sharma, Hardik",Hardik Sharma,921137544,matched,13,13,21,61.904761904761905,V0,id_exact
+125,"Sharma, Trisha",Trisha Sharma,922236295,matched,101,10,21,47.61904761904762,V3,id_exact
+126,"Shing, Cindy",Cindy Shing,922013447,matched,75,20,21,95.23809523809524,V2,id_exact
+127,"Singh, Anant Kumar",Anant Kumar Singh,923178080,matched,124,15,21,71.42857142857143,V3,id_exact
+128,"Singh, Atin Kumar",Atin Kumar Singh,924006452,matched,33,18,21,85.71428571428571,V0,id_exact
+129,"Singh, Divyansh",Divyansh Singh,923978196,matched,159,21,21,100.0,V0,id_exact
+130,"Sirur, Aishwari",Aishwari Sirur,923447478,matched,141,15,21,71.42857142857143,V0,id_exact
+131,"Sitt, Than",Than Sitt,922982468,matched,115,16,21,76.19047619047619,V1,id_exact
+132,"St Pierre, Luca",Luca St Pierre,922529533,matched,40,9,21,42.857142857142854,V2,id_exact
+133,"Sun, Yuxuan",Yuxuan Sun,922495340,matched,166,16,21,76.19047619047619,V1,id_exact
+134,"Sunku, Nithya",Nithya Sunku,923186959,matched,93,15,21,71.42857142857143,V3,id_exact
+135,"Tan, Yu Bin Tevyn",Yu Bin Tevyn Tan,927520197,matched,77,20,21,95.23809523809524,V0,id_exact
+136,"Tangirala, Sameer",Sameer Tangirala,923721123,matched,12,16,21,76.19047619047619,V3,id_exact
+137,"Thandi, Manraj",Manraj Thandi,924914298,matched,45,12,21,57.142857142857146,V1,id_exact
+138,"Thota, Amar",Amar Thota,923202590,matched,130,15,21,71.42857142857143,V1,id_exact
+139,"Thurman, Sean",Sean Thurman,925238504,matched,57,12,21,57.142857142857146,V0,id_exact
+140,"Tiet, Bryan",Bryan Tiet,923919016,matched,72,15,21,71.42857142857143,V3,name_and_near_id
+141,"Tompkins-Nutt, Josh",Josh Tompkins-Nutt,924024900,matched,15,18,21,85.71428571428571,V3,id_exact
+142,"Totla, Jai",Jai Totla,923374444,matched,9,14,21,66.66666666666667,V0,id_exact
+143,"Tran, Jessica",Jessica Tran,922201592,matched,85,5,21,23.80952380952381,V0,name_exact
+144,"Tran, Viet-Thy",Viet-Thy Tran,921883021,matched,89,16,21,76.19047619047619,V0,id_exact
+145,"Trinh, Daryan",Daryan Trinh,923862778,matched,108,21,21,100.0,V0,id_exact
+146,"Truong, Ryan",Ryan Truong,924081066,matched,70,14,21,66.66666666666667,V1,id_exact
+147,"Tsang, Alfred",Alfred Tsang,922152971,matched,137,21,21,100.0,V1,id_exact
+148,"Tsiklauri, Giorgi",Giorgi Tsiklauri,921207898,no_exam_record,,,21,,,
+149,"Twitchell, Reid",Reid Twitchell,919264267,matched,38,17,21,80.95238095238095,V0,id_exact
+150,"Ueda, Taylor",Taylor Ueda,922198896,matched,69,12,21,57.142857142857146,V2,name_exact
+151,"Venkatakrishnan, Matangi",Matangi Venkatakrishnan,921362733,no_exam_record,,,21,,,
+152,"Venkatesan, Ananya",Ananya Venkatesan,923344018,matched,31,10,21,47.61904761904762,V3,name_exact
+153,"Vo, Albert",Albert Vo,924005385,matched,117,19,21,90.47619047619048,V2,id_exact
+154,"Voloshin, Liz",Liz Voloshin,921331450,no_exam_record,,,21,,,
+155,"Wang, Yiran",Yiran Wang,922158739,matched,162,19,21,90.47619047619048,V2,id_exact
+156,"Weng, Xian Yang",Xian Yang Weng,927520168,matched,88,18,21,85.71428571428571,V2,id_exact
+157,"Wong, Chun San",Chun San Wong,925238274,matched,156,7,21,33.333333333333336,V1,id_exact
+158,"Xie, Aiden",Aiden Xie,921865997,matched,65,8,21,38.095238095238095,V0,id_exact
+159,"Yanez, Seamus",Seamus Yanez,927539450,matched,55,16,21,76.19047619047619,V1,name_exact
+160,"Yang, Harvey",Harvey Yang,923748258,matched,134,21,21,100.0,V3,id_exact
+161,"Ye, Isabelle",Isabelle Ye,923503448,matched,150,11,21,52.38095238095238,V1,id_exact
+162,"Yedumbaka, Kartik",Kartik Yedumbaka,925249661,matched,157,17,21,80.95238095238095,V2,id_exact
+163,"Yi, David",David Yi,921955849,matched,20,19,21,90.47619047619048,V0,name_and_near_id
+164,"York, Nathaniel",Nathaniel York,922037740,matched,8,11,21,52.38095238095238,V0,name_exact
+165,"Young, Becky",Becky Young,923261311,matched,36,13,21,61.904761904761905,V1,name_and_near_id
+166,"Yu, Danny",Danny Yu,921852968,matched,59,12,21,57.142857142857146,V3,id_exact
+167,"Zannotti, Christian",Christian Zannotti,923998859,matched,34,19,21,90.47619047619048,V3,id_exact
+168,"Zeng, Howie",Howie Zeng,926470882,matched,32,16,21,76.19047619047619,V3,id_exact
+169,"Zhang, Chenxuan",Chenxuan Zhang,922184127,matched,128,14,21,66.66666666666667,V0,name_exact
+170,"Zhang, Victor",Victor Zhang,921858564,matched,145,16,21,76.19047619047619,V1,name_exact
+171,"Zhao, Karen",Karen Zhao,921521545,matched,35,13,21,61.904761904761905,V2,id_exact
+172,"Zhou, Sicheng",Sicheng Zhou,922474950,matched,136,18,21,85.71428571428571,V1,id_exact
+173,"Zhu, Chenfei",Chenfei Zhu,923790714,matched,140,13,21,61.904761904761905,V3,id_exact
+174,"Zhu, Matthew",Matthew Zhu,924072208,matched,5,18,21,85.71428571428571,V2,name_exact
