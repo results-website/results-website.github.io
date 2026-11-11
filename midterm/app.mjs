@@ -1,4 +1,5 @@
 import {LETTERS,own,validateDataset,validateCorrections,gradeAll,statistics,csvText,gradeExport} from './model.mjs';
+import {defaultDatasetId,privateReviewKey,clearPrivateFragment,loadDefault} from './default-loader.mjs';
 
 const $=s=>document.querySelector(s),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(v,n=2)=>v===null||v===undefined?'—':Number(v).toFixed(n),pct=v=>v===null?'—':fmt(v,1)+'%';
@@ -86,4 +87,18 @@ $('#close-scan').onclick=()=>$('#scan-dialog').close();$('#scan-zoom').onchange=
 document.addEventListener('keydown',e=>{if(!dataset||$('#scan-dialog').open)return;if((e.ctrlKey||e.metaKey)&&e.key==='Enter'&&session.tab==='review'){e.preventDefault();$('#save-next').click();return;}if(/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;if(session.tab==='review'&&['j','k'].includes(e.key.toLowerCase())){e.preventDefault();navigate(e.key.toLowerCase()==='j'?1:-1);}});
 window.addEventListener('beforeunload',e=>{if(unsaved){e.preventDefault();e.returnValue='';}});
 window.addEventListener('pagehide',()=>{if(unsaved)flushSave();});
-await dbReady;if(db){try{const active=await readStore('meta','active');if(active){const d=await readStore('datasets',active);if(d)await activate(d,true);}}catch(error){showNotice('The saved workspace could not be restored. Open the private file again, then restore a downloaded backup. '+error.message);}}
+await dbReady;
+try{
+  const key=privateReviewKey();
+  const active=db?await readStore('meta','active'):null;
+  const cached=db?await readStore('datasets',key?defaultDatasetId:active||defaultDatasetId):null;
+  if(cached){
+    await activate(cached,true);
+    if(key){if(db)await writeStores([['meta','active',cached.dataset_id]]);clearPrivateFragment();}
+  }else if(key){
+    saveLabel('Opening Midterm 1…');$('#welcome-title').textContent='Opening your midterm…';
+    const d=await loadDefault(key,percent=>saveLabel(percent===100?'Preparing answer sheets…':'Opening Midterm 1 · '+percent+'%'));
+    await activate(d);
+    if(db)clearPrivateFragment();
+  }
+}catch(error){showNotice(error.message);saveLabel('Default exam could not be opened',true);}

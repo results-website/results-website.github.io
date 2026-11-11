@@ -5,3 +5,5 @@
 /midterm/*.json
 /midterm/data/
 /midterm/uploads/
+*.private.json
+*.private.txt
