@@ -45,8 +45,8 @@
 
   function renderUpdates(){
     const u=data.updates;
-    $('#update-summary').textContent=`${u.added_exams} new exams matched one-to-one to the eight previously missing roster records. The pool is now ${data.summary.n} exams: ${data.roster.summary.matched_exams} enrolled students plus one auditor. Enter the eight scores below in the gradebook.`;
-    $('#updates-table').innerHTML='<thead><tr><th>Student</th><th>SIS student ID</th><th>Previous grade</th><th>Final / 21</th><th>Percent</th><th>Action</th></tr></thead><tbody>'+u.entries.map(s=>`<tr><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button></td><td>${escape(s.student_id)}</td><td>Ungraded</td><td class="score-cell">${s.score} / 21</td><td>${percent(s.percent)}</td><td>Enter grade</td></tr>`).join('')+'</tbody>';
+    $('#update-summary').textContent=`${u.added_exams} new exams matched one-to-one to the eight previously missing roster records. The pool is now ${data.summary.n} exams: ${data.roster.summary.matched_exams} enrolled students plus one auditor. All eight scores below are already included in the final results and statistics.`;
+    $('#updates-table').innerHTML='<thead><tr><th>Student</th><th>SIS student ID</th><th>Previous grade</th><th>Final / 21</th><th>Percent</th><th>Status</th></tr></thead><tbody>'+u.entries.map(s=>`<tr><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button></td><td>${escape(s.student_id)}</td><td>Ungraded</td><td class="score-cell">${s.score} / 21</td><td>${percent(s.percent)}</td><td>Added</td></tr>`).join('')+'</tbody>';
     $('#update-notes').innerHTML=u.entries.map(s=>`<p><strong>${escape(s.name)}:</strong> ${escape(s.review_notes)}</p>`).join('')+`<p class="muted small">All additional exams use V0, verified from Q15 and the questionnaire choice layout. Mean changed from ${format(u.previous_summary.mean)} to ${format(data.summary.mean)}/21; sample SD changed from ${format(u.previous_summary.sd)} to ${format(data.summary.sd)}.</p>`;
   }
 
