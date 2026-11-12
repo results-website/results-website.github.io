@@ -8,7 +8,7 @@
   const percent=value=>value==null?'—':format(value,1)+'%';
   const letters=[...'ABCDEFGH'];
   let selectedQuestion=1,activeTab='overview';
-  const gradeFilters={search:'',version:'all',match:'all',batch:'all',sort:'roster'};
+  const gradeFilters={search:'',version:'all',match:'all',batch:'all',sort:'page'};
   let printFilters=null;
 
   function showTab(name){
@@ -124,7 +124,7 @@
   $('#roster-filter').addEventListener('change',renderRoster);
   $('#close-student').addEventListener('click',()=>$('#student-dialog').close());
   $('#print-report').addEventListener('click',()=>window.print());
-  window.addEventListener('beforeprint',()=>{printFilters={...gradeFilters};Object.assign(gradeFilters,{search:'',version:'all',match:'all',batch:'all',sort:'roster'});renderGrades();});
+  window.addEventListener('beforeprint',()=>{printFilters={...gradeFilters};Object.assign(gradeFilters,{search:'',version:'all',match:'all',batch:'all',sort:'page'});renderGrades();});
   window.addEventListener('afterprint',()=>{if(printFilters){Object.assign(gradeFilters,printFilters);printFilters=null;renderGrades();}});
   document.addEventListener('click',event=>{
     const button=event.target.closest('button,a');
