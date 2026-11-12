@@ -7,13 +7,13 @@
   const format=(value,digits=2)=>value==null?'—':Number(value).toFixed(digits);
   const percent=value=>value==null?'—':format(value,1)+'%';
   const letters=[...'ABCDEFGH'];
-  let selectedQuestion=1,activeTab='updates';
+  let selectedQuestion=1,activeTab='overview';
   const gradeFilters={search:'',version:'all',match:'all',batch:'all',sort:'roster'};
   let printFilters=null;
 
   function showTab(name){
     activeTab=name;
-    for(const section of ['updates','overview','questions','grades','roster','methods']){
+    for(const section of ['overview','questions','grades','roster','methods']){
       $('#'+section+'-section').hidden=section!==name;
       $(`[data-tab="${section}"]`).classList.toggle('active',section===name);
     }
@@ -21,7 +21,7 @@
 
   function renderOverview(){
     const s=data.summary;
-    $('#snapshot').textContent='Updated grades + eight additional exams + official roster · '+new Date(data.generated_at).toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})+' · '+s.n+' exams';
+    $('#snapshot').textContent='Final grades + official roster · '+new Date(data.generated_at).toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})+' · '+s.n+' exams';
     $('#scope-note').innerHTML=`<span class="status-dot"></span><strong>All answer sets resolved.</strong> All ${s.n} exams and all 21 questions are included. Reviewed blank answers receive zero points.`;
     $('#roster-reference').textContent=`Official roster: ${data.roster.summary.matched_exams} one-to-one matches · ${data.roster.summary.auditors} auditor · ${data.roster.summary.roster_without_exam} roster records without an exam.`;
     const cards=[
@@ -41,13 +41,6 @@
     $('#topics').innerHTML=data.topics.map(topic=>`<div class="bar-heading"><span>${escape(topic.topic)}</span><strong>${percent(topic.percent_correct)}</strong></div><div class="bar-track"><div class="bar-fill" style="width:${topic.percent_correct}%"></div></div>`).join('');
     $('#most-missed').innerHTML=[...data.questions].sort((a,b)=>a.percent_correct-b.percent_correct).slice(0,3).map(q=>`<button class="missed-item" data-question="${q.number}"><span><span class="question-number">Q${q.number}</span>${escape(q.title)}<small>${q.n-q.correct} of ${q.n} answered incorrectly</small></span><span class="missed-pct">${percent(q.percent_correct)}<small>correct</small></span></button>`).join('');
     $('#version-table').innerHTML='<thead><tr><th>Version</th><th>N</th><th>Mean / 21</th><th>Median</th><th>Sample SD</th></tr></thead><tbody>'+data.versions.map(v=>`<tr><td>${v.version}</td><td>${v.n}</td><td>${format(v.mean)}</td><td>${format(v.median)}</td><td>${format(v.sd)}</td></tr>`).join('')+'</tbody>';
-  }
-
-  function renderUpdates(){
-    const u=data.updates;
-    $('#update-summary').textContent=`${u.added_exams} new exams matched one-to-one to the eight previously missing roster records. The pool is now ${data.summary.n} exams: ${data.roster.summary.matched_exams} enrolled students plus one auditor. All eight scores below are already included in the final results and statistics.`;
-    $('#updates-table').innerHTML='<thead><tr><th>Student</th><th>SIS student ID</th><th>Previous grade</th><th>Final / 21</th><th>Percent</th><th>Status</th></tr></thead><tbody>'+u.entries.map(s=>`<tr><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button></td><td>${escape(s.student_id)}</td><td>Ungraded</td><td class="score-cell">${s.score} / 21</td><td>${percent(s.percent)}</td><td>Added</td></tr>`).join('')+'</tbody>';
-    $('#update-notes').innerHTML=u.entries.map(s=>`<p><strong>${escape(s.name)}:</strong> ${escape(s.review_notes)}</p>`).join('')+`<p class="muted small">All additional exams use V0, verified from Q15 and the questionnaire choice layout. Mean changed from ${format(u.previous_summary.mean)} to ${format(data.summary.mean)}/21; sample SD changed from ${format(u.previous_summary.sd)} to ${format(data.summary.sd)}.</p>`;
   }
 
   function renderQuestions(){
@@ -84,14 +77,14 @@
   function renderGrades(){
     const students=filteredStudents();
     $('#grade-count').textContent=`${students.length} / ${data.students.length} students`;
-    $('#grades-table').innerHTML='<thead><tr><th>Record</th><th>Student · roster identity</th><th>Student ID</th><th>Version</th><th>Score / 21</th><th>Percentage</th></tr></thead><tbody>'+(students.length?students.map(s=>`<tr><td class="number">${s.page}</td><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button>${s.batch==='additional'?'<br><span class="roster-flag additional">Additional exam</span>':''}${s.match_status==='auditor'?'<br><span class="roster-flag auditor">Auditor</span>':s.match_status==='unmatched'?'<br><span class="roster-flag">No roster match</span>':''}</td><td class="number">${escape(s.student_id||'—')}</td><td>${s.version}</td><td class="score-cell number">${s.score} <span class="muted">/ 21</span></td><td class="number">${percent(s.percent)}<div class="percent-track"><span style="width:${s.percent}%"></span></div></td></tr>`).join(''):'<tr><td class="empty" colspan="6">No matching student records.</td></tr>')+'</tbody>';
+    $('#grades-table').innerHTML='<thead><tr><th>Record</th><th>Student · roster identity</th><th>Student ID</th><th>Version</th><th>Score / 21</th><th>Percentage</th></tr></thead><tbody>'+(students.length?students.map(s=>`<tr><td class="number">${s.page}</td><td><button class="table-link" data-student="${s.page}">${escape(s.name)} ↗</button>${s.match_status==='auditor'?'<br><span class="roster-flag auditor">Auditor</span>':s.match_status==='unmatched'?'<br><span class="roster-flag">No roster match</span>':''}</td><td class="number">${escape(s.student_id||'—')}</td><td>${s.version}</td><td class="score-cell number">${s.score} <span class="muted">/ 21</span></td><td class="number">${percent(s.percent)}<div class="percent-track"><span style="width:${s.percent}%"></span></div></td></tr>`).join(''):'<tr><td class="empty" colspan="6">No matching student records.</td></tr>')+'</tbody>';
   }
 
   function showStudent(page){
     const s=data.students.find(student=>student.page===page);
     if(!s)return;
     $('#student-title').textContent=s.name;
-    $('#student-result').innerHTML=`<div class="student-summary"><span class="student-score">${s.score}<small> / 21</small></span><strong>${percent(s.percent)}</strong><span>${s.version} · record ${s.page} · ${escape(s.source_label)}</span><span>ID: ${escape(s.student_id||'Not provided')}</span></div>${s.match_status==='auditor'?'<p class="roster-flag auditor">Auditor · included in the score distribution and all exam statistics.</p>':s.match_status==='unmatched'?'<p class="roster-flag">This exam has no match in the supplied roster.</p>':''}${s.batch==='additional'?`<div class="reading-note"><strong>Reading notes</strong>${s.review_notes.map(note=>`<p>${escape(note)}</p>`).join('')}</div>`:''}<div class="response-grid">${s.answers.map((answer,i)=>`<div class="response ${s.points[i]?'':'wrong'}"><div class="response-q">Q${i+1}</div><div class="response-answer">${escape(answer||'—')} ${s.points[i]?'✓':'×'}</div><div class="response-key">Key: ${data.questions[i].correct_options[s.version]} · ${s.points[i]} / 1</div></div>`).join('')}</div><p class="muted small">A dash means a reviewed blank response. Every question, including Q15, counts for one point.</p><details class="identity-details"><summary>Roster match details</summary><p>${escape(s.match_note)}</p><p>Original submitted name: ${escape(s.source_name)}<br>Original transcribed ID: ${escape(s.source_student_id||'Not provided')}</p></details>`;
+    $('#student-result').innerHTML=`<div class="student-summary"><span class="student-score">${s.score}<small> / 21</small></span><strong>${percent(s.percent)}</strong><span>${s.version} · exam record ${s.page}</span><span>ID: ${escape(s.student_id||'Not provided')}</span></div>${s.match_status==='auditor'?'<p class="roster-flag auditor">Auditor · included in the score distribution and all exam statistics.</p>':s.match_status==='unmatched'?'<p class="roster-flag">This exam has no match in the supplied roster.</p>':''}${s.batch==='additional'?`<div class="reading-note"><strong>Reading notes</strong>${s.review_notes.map(note=>`<p>${escape(note)}</p>`).join('')}</div>`:''}<div class="response-grid">${s.answers.map((answer,i)=>`<div class="response ${s.points[i]?'':'wrong'}"><div class="response-q">Q${i+1}</div><div class="response-answer">${escape(answer||'—')} ${s.points[i]?'✓':'×'}</div><div class="response-key">Key: ${data.questions[i].correct_options[s.version]} · ${s.points[i]} / 1</div></div>`).join('')}</div><p class="muted small">A dash means a reviewed blank response. Every question, including Q15, counts for one point.</p><details class="identity-details"><summary>Roster match details</summary><p>${escape(s.match_note)}</p><p>Original submitted name: ${escape(s.source_name)}<br>Original transcribed ID: ${escape(s.source_student_id||'Not provided')}</p></details>`;
     $('#student-dialog').showModal();
   }
 
@@ -126,7 +119,6 @@
   $('#question-sort').addEventListener('change',renderQuestions);
   $('#grade-search').addEventListener('input',event=>{gradeFilters.search=event.target.value;renderGrades();});
   $('#grade-version').addEventListener('change',event=>{gradeFilters.version=event.target.value;renderGrades();});
-  $('#grade-batch').addEventListener('change',event=>{gradeFilters.batch=event.target.value;renderGrades();});
   $('#grade-match').addEventListener('change',event=>{gradeFilters.match=event.target.value;renderGrades();});
   $('#grade-sort').addEventListener('change',event=>{gradeFilters.sort=event.target.value;renderGrades();});
   $('#roster-filter').addEventListener('change',renderRoster);
@@ -150,5 +142,5 @@
     if(button.matches('a[download][href="roster-matches.csv"]')){event.preventDefault();exportRoster(true);}
     if(button.matches('a[download][href="report.html"]')&&window.MIDTERM_OFFLINE){event.preventDefault();download('ECS174-midterm-report.html','<!doctype html>'+document.documentElement.outerHTML,'text/html;charset=utf-8');}
   });
-  renderOverview();renderUpdates();renderQuestions();renderQuestionDetail();renderGrades();renderRoster();showTab('updates');
+  renderOverview();renderQuestions();renderQuestionDetail();renderGrades();renderRoster();showTab('overview');
 })();
